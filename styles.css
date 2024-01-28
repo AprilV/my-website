@@ -1,0 +1,84 @@
+.first_text {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.second_text {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.third_text {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+a[href*="linkedin"] {
+    color: #0077b5;
+}
+
+header {
+    background-color: #c0c0c0;
+    text-align: center;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    text-align: center;
+    background-color: #e7ebec;
+    font-size: 125%;
+}
+
+section {
+    text-align: center;
+}
+
+#about_me p {
+    color: #555;
+}
+
+section#work_history {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+section#employers {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+section#quote q {
+        font-style: italic;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #0077b5;
+}
+
+section#linkedin a:visited {
+    color: #7111df;
+}
+
+section#linkedin a:hover {
+    font-size: 200%;
+    color: #e70303;
+}
+
+footer {
+    text-align: center;
+}
+
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: center;
+}
+
+ol li {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+}
