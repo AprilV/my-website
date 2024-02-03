@@ -18,19 +18,33 @@
 
 
 a[href*="linkedin"] {
-    color: #0077b5;
+    color: #add8e6;
 }
 
 header {
-    background-color: #c0c0c0;
     text-align: center;
     font-size: 150%;
     font-family: Arial, Helvetica, sans-serif;
+    border: #000000;
+    border-radius: 20%;
+    border-color: #a71414;
+    border-style: ridge;
+    background: linear-gradient(to right, #02ace8, #0263e8);
+
+
+}
+
+body {
+    color: #000000;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding: 10px;
 }
 
 main {
     text-align: center;
-    background-color: #e7ebec;
+    background-color: whitesmoke;
     font-size: 125%;
 }
 
@@ -40,22 +54,57 @@ section {
 
 #about_me p {
     color: #555;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 25px;
+}
+
+#about_me_title {
+    display: inline-block;      
+    text-align: center;
+    font-size: x-large;
+    font: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+    color: black;
+    
 }
 
 section#work_history {
     font-family: sans-serif;
     font-weight: bold;
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 2px solid #000000;
+    column-gap: 20px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    text-align: left;
 }
 
 section#employers {
     font-family: sans-serif;
     font-weight: bold;
+
 }
 
 section#quote q {
-        font-style: italic;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: #0077b5;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0077b5;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
 }
 
 section#linkedin a:visited {
@@ -64,7 +113,7 @@ section#linkedin a:visited {
 
 section#linkedin a:hover {
     font-size: 200%;
-    color: #e70303;
+    color: #34a0f8;
 }
 
 footer {
@@ -82,3 +131,51 @@ ol li {
     width: 100%;
     margin: 0 auto;
 }
+
+#work_history_title {
+    display: inline-block;
+    border: 1px groove;
+    border-radius: .25em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to right, #02ace8, #0263e8);
+    padding: 5px 10px;
+    color: #FFFFFF;
+    border-color: #a71414;
+
+}
+
+#employers {
+    text-align: center;
+
+}
+
+#employers_title {
+    border-radius: .25em;
+    text-align: center;
+    border-style: groove;
+    border-radius: 50%;
+    text-align: center;
+    background: linear-gradient(to right, #02ace8, #0263e8);
+    color: #FFFFFF;
+    border-color: #a71414;
+}
+
+#april-sykes {
+    border-radius: 5%;
+    border-style: double;
+    border-color: #a71414;
+}
+
+
+
+
+
+
+
+
+/*
+  display: inline-block; /* Ensures the border wraps just around the text 
+  border: 1px groove; /* Applies the groove style directly 
+  border-radius: .25em; /* Provides rounded corners 
+*/
