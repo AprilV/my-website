@@ -1,24 +1,23 @@
-.first_text {
-    color: #000000;
+```css .first_text {
+    color: #2B2B2B;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 .second_text {
-    color: #000000;
+    color: #2B2B2B;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 .third_text {
-    color: #000000;
+    color: #2B2B2B;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-
 a[href*="linkedin"] {
-    color: #add8e6;
+    color: #007BFF;
 }
 
 header {
@@ -27,15 +26,13 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     border: #000000;
     border-radius: 20%;
-    border-color: #a71414;
+    border-color: #28A745;
     border-style: ridge;
-    background: linear-gradient(to right, #02ace8, #0263e8);
-
-
+    background: linear-gradient(to right, #F5F5F5, #D3D3D3);
 }
 
 body {
-    color: #000000;
+    color: #2B2B2B;
     padding-top: 20px;
     padding-right: 15px;
     padding-bottom: 20px;
@@ -44,7 +41,7 @@ body {
 
 main {
     text-align: center;
-    background-color: whitesmoke;
+    background-color: #F5F5F5;
     font-size: 125%;
 }
 
@@ -63,14 +60,13 @@ section {
 }
 
 #about_me_title {
-    display: inline-block;      
+    display: inline-block;
     text-align: center;
     font-size: x-large;
     font: bold;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: underline;
     color: black;
-    
 }
 
 section#work_history {
@@ -78,9 +74,9 @@ section#work_history {
     font-weight: bold;
     column-count: 3;
     column-gap: 20px;
-    column-rule: 2px solid #000000;
+    column-rule: 2px solid #2B2B2B;
     column-gap: 20px;
-    background-color: #f5f5f5;
+    background-color: #F5F5F5;
     padding-top: 30px;
     padding-right: 15px;
     padding-bottom: 20px;
@@ -89,15 +85,13 @@ section#work_history {
 }
 
 section#employers {
-    font-family: sans-serif;
-    font-weight: bold;
-
+    text-align: center;
 }
 
 section#quote q {
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #0077b5;
+    color: #007BFF;
     padding-top: 10px;
     display: inline-block;
 }
@@ -138,41 +132,43 @@ ol li {
     border-radius: .25em;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(to right, #02ace8, #0263e8);
+    background: linear-gradient(to right, #F5F5F5, #D3D3D3);
     padding: 5px 10px;
-    color: #FFFFFF;
-    border-color: #a71414;
-
+    color: #000000;
+    border-color: #28A745;
 }
 
 #employers {
     text-align: center;
-
+    margin-bottom: 150px;
 }
 
-#employers_title {
+h4 {
+    display: inline-block;
+    border: 1px groove;
     border-radius: .25em;
     text-align: center;
-    border-style: groove;
-    border-radius: 50%;
-    text-align: center;
-    background: linear-gradient(to right, #02ace8, #0263e8);
-    color: #FFFFFF;
-    border-color: #a71414;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to right, #F5F5F5, #D3D3D3);
+    padding: 5px 10px;
+    color: #000000;
+    border-color: #28A745;
 }
 
 #april-sykes {
     border-radius: 5%;
     border-style: double;
-    border-color: #a71414;
+    border-color: #28A745;
 }
 
+.small_logo {
+    width: 150px;
+}
 
-
-
-
-
-
+.last_page {
+    padding-top: 25px;
+}
 
 /*
   display: inline-block; /* Ensures the border wraps just around the text 
