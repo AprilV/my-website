@@ -20,11 +20,6 @@
     text-align: center;
 }
 
-a[href*="linkedin"] {
-    color: #007BFF;
-    text-decoration: none;
-}
-
 header {
     text-align: center;
     font-size: 100%;
@@ -106,7 +101,19 @@ section#linkedin a:hover {
     color: #34a0f8;
     text-decoration: none;
 }
+.linkedin-logo {
+    width: 80px; 
+    height: auto; 
+    vertical-align: middle; 
+    
+    text-decoration: none;
+}
 
+#linkedin a {
+    text-decoration: none; 
+    color: #007BFF; 
+    font-weight: bold; 
+}
 footer {
     text-align: center;
 }
