@@ -33,8 +33,8 @@ header {
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 
@@ -59,7 +59,7 @@ section {
 
 }
 
-section#work_history {
+#work_history {
     font-family: sans-serif;
     font-weight: bold;
     column-count: 3;
@@ -74,11 +74,35 @@ section#work_history {
     text-align: left;
 }
 
-section#employers {
+/*small Devices*/
+@media (min-width: 200px) {
+    #work_history {
+        column-count: 1;
+    }
+}
+
+/*Medium Devices*/
+
+@media (min-width: 600px) {
+    #work_history {
+        column-count: 2;
+    }
+}
+
+/*Large Screens*/
+@media (min-width: 900px) {
+    #work_history {
+        column-count: 3;
+    }
+}
+
+
+
+#employers {
     text-align: center;
 }
 
-section#quote q {
+#quote q {
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #007BFF;
@@ -91,29 +115,31 @@ p {
     font-weight: normal;
 }
 
-section#linkedin a:visited {
+#linkedin a:visited {
     color: #7111df;
     text-decoration: none;
 }
 
-section#linkedin a:hover {
+#linkedin a:hover {
     font-size: 200%;
     color: #34a0f8;
     text-decoration: none;
 }
+
 .linkedin-logo {
-    width: 80px; 
-    height: auto; 
-    vertical-align: middle; 
-    
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+
     text-decoration: none;
 }
 
 #linkedin a {
-    text-decoration: none; 
-    color: #007BFF; 
-    font-weight: bold; 
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
 }
+
 footer {
     text-align: center;
 }
@@ -141,6 +167,7 @@ ol li {
     color: #000000;
     border-color: #28A745;
 }
+
 
 #employers {
     text-align: center;
