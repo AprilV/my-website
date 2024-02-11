@@ -35,6 +35,8 @@ header {
 body {
     margin-left: 20%;
     margin-right: 20%;
+    background-color: #D3D3D3;
+
 }
 
 
@@ -74,27 +76,7 @@ section {
     text-align: left;
 }
 
-/*small Devices*/
-@media (min-width: 200px) {
-    #work_history {
-        column-count: 1;
-    }
-}
 
-/*Medium Devices*/
-
-@media (min-width: 600px) {
-    #work_history {
-        column-count: 2;
-    }
-}
-
-/*Large Screens*/
-@media (min-width: 900px) {
-    #work_history {
-        column-count: 3;
-    }
-}
 
 
 
@@ -169,10 +151,21 @@ ol li {
 }
 
 
-#employers {
-    text-align: center;
-    margin-bottom: 150px;
+#employers_images img.small_logo {
+    width: 30%;
+    /* Sets a fixed width for the logos, making them smaller */
+    height: auto;
+    /* Adjusts the height automatically to maintain the aspect ratio */
 }
+
+
+@media (max-width: 600px) {
+    #employers_images img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 
 h4 {
     display: inline-block;
@@ -213,6 +206,36 @@ h4 {
     border-style: ridge;
     margin-bottom: 20px;
     border-color: #28A745;
+}
+
+
+/*small Devices*/
+@media (min-width: 250px) {
+    #work_history {
+        column-count: 1;
+    }
+}
+
+/*Medium Devices*/
+
+@media (min-width: 650px) {
+    #work_history {
+        column-count: 2;
+    }
+}
+
+/*Large Screens*/
+@media (min-width: 900px) {
+    #work_history {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 800px) {
+    #nav_menu {
+        font-size: 8px;
+        /* Smaller font size for screens narrower than 600px */
+    }
 }
 
 #nav_menu ul {
@@ -271,6 +294,12 @@ h4 {
     background-color: #7db90f;
     /* Hover background color */
 }
+
+#nav_menu ul li a.active {
+    background-color: #28A745; /* Background color for active item */
+    color: #FFFFFF; /* Text color for active item */
+}
+
 
 #upcoming-projects {
     background-color: #FFA500;
