@@ -33,32 +33,38 @@ header {
 }
 
 body {
-    margin-left: 20%;
-    margin-right: 20%;
-    background-color: #D3D3D3;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: linear-gradient(to right, #F5F5F5, #D3D3D3);
 
 }
 
 
 main {
     text-align: center;
-    background-color: #F5F5F5;
-    font-size: 125%;
+    background: linear-gradient(to right, #F5F5F5, #D3D3D3);
+
+    font-size: 100%;
 }
 
 section {
     text-align: center;
 }
 
+#about_me {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
 #about_me_title {
     display: inline-block;
     text-align: center;
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
-    color: #3A2A4D;
-    padding: 10px 20px;
-    margin: 10px;
-
+    color: #000000;
+    padding-top: 90px;
 }
 
 #work_history {
@@ -75,10 +81,6 @@ section {
     padding-left: 25px;
     text-align: left;
 }
-
-
-
-
 
 #employers {
     text-align: center;
@@ -150,7 +152,6 @@ ol li {
     border-color: #28A745;
 }
 
-
 #employers_images img.small_logo {
     width: 30%;
     /* Sets a fixed width for the logos, making them smaller */
@@ -159,12 +160,6 @@ ol li {
 }
 
 
-@media (max-width: 600px) {
-    #employers_images img {
-        max-width: 100%;
-        height: auto;
-    }
-}
 
 
 h4 {
@@ -206,36 +201,6 @@ h4 {
     border-style: ridge;
     margin-bottom: 20px;
     border-color: #28A745;
-}
-
-
-/*small Devices*/
-@media (min-width: 250px) {
-    #work_history {
-        column-count: 1;
-    }
-}
-
-/*Medium Devices*/
-
-@media (min-width: 650px) {
-    #work_history {
-        column-count: 2;
-    }
-}
-
-/*Large Screens*/
-@media (min-width: 900px) {
-    #work_history {
-        column-count: 3;
-    }
-}
-
-@media (max-width: 800px) {
-    #nav_menu {
-        font-size: 8px;
-        /* Smaller font size for screens narrower than 600px */
-    }
 }
 
 #nav_menu ul {
@@ -296,8 +261,10 @@ h4 {
 }
 
 #nav_menu ul li a.active {
-    background-color: #28A745; /* Background color for active item */
-    color: #FFFFFF; /* Text color for active item */
+    background-color: #28A745;
+    /* Background color for active item */
+    color: #FFFFFF;
+    /* Text color for active item */
 }
 
 
@@ -314,3 +281,46 @@ h4 {
     text-align: center;
 
 }
+
+/*small Devices work_history*/
+@media (min-width: 0px) {
+    #work_history {
+        column-count: 1;
+    }
+}
+
+/*Medium Devices work_history*/
+
+@media (min-width: 550px) {
+    #work_history {
+        column-count: 2;
+    }
+}
+
+/*Large Screens work_history*/
+@media (min-width: 950px) {
+    #work_history {
+        column-count: 3;
+    }
+}
+
+/* Smaller font size nav_menu*/
+@media (max-width: 800px) {
+    #nav_menu {
+        font-size: 8px;
+    }
+}
+/* Smaller font size #work_history*/
+@media (max-width: 550px) {
+    #work_history{
+        font-size: 8px;
+    }
+}
+
+/* Smaller font size #work_history*/
+@media (max-width: 1000px) {
+    #work_history{
+        font-size: 10px;
+    }
+}
+
