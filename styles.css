@@ -287,100 +287,92 @@ h4 {
 
 }
 
-/*small Devices work_history*/
+/* Work History */
 @media (min-width: 0px) {
     #work_history {
         column-count: 1;
+        font-size: 12px;
+        /* smallest devices */
     }
 }
-
-/*Medium Devices work_history*/
 
 @media (min-width: 550px) {
     #work_history {
         column-count: 2;
+        font-size: 14px;
+        /* medium devices */
     }
 }
 
-/*Large Screens work_history*/
 @media (min-width: 950px) {
     #work_history {
         column-count: 3;
+        font-size: 16px;
+        /*larger screens */
     }
 }
 
-/* Smaller font size nav_menu*/
+/* Navigation Menu */
 @media (max-width: 800px) {
     #nav_menu {
-        font-size: 8px;
-    }
-}
-
-/* Smaller font size #work_history*/
-@media (max-width: 550px) {
-    #work_history {
-        font-size: 8px;
-    }
-}
-
-/* Smaller font size #work_history*/
-@media (max-width: 1000px) {
-    #work_history {
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 1400px) {
-    #about_me {
         font-size: 12px;
+
     }
 }
 
+/* About Me */
 @media (max-width: 950px) {
     #about_me {
-        font-size: 10px;
+        font-size: 14px;
+
     }
 }
 
-@media (max-width: 650px) {
+@media (min-width: 951px) and (max-width: 1400px) {
     #about_me {
+        font-size: 16px;
+    }
+}
+
+/* Upcoming Projects */
+@media (max-width: 500px) {
+    #upcoming-projects {
         font-size: 10px;
+
+    }
+}
+
+@media (max-width: 605px) {
+    #upcoming-projects {
+        font-size: 12px;
     }
 }
 
 @media (max-width: 730px) {
     #upcoming-projects {
-        font-size: 12px;
+        font-size: 14px;
 
     }
 }
 
+/* Third Text */
 @media (max-width: 605px) {
-    #upcoming-projects {
-        font-size: 8px;
-    }
-}
-
-@media (max-width: 500px) {
-    #upcoming-projects {
-        font-size: 4px;
-    }
-}
-
-@media (max-width: 1340px) {
     .third_text {
-        font-size: 12px;
+        font-size: 10px;
+
     }
 }
 
 @media (max-width: 885px) {
     .third_text {
-        font-size: 8px;
+        font-size: 12px;
+
     }
 }
 
-@media (max-width: 605px) {
+@media (max-width: 1340px) {
     .third_text {
-        font-size: 4px;
+        font-size: 14px;
+
     }
 }
