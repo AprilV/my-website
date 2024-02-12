@@ -29,7 +29,15 @@ header {
     border-color: #28A745;
     border-style: ridge;
     background: linear-gradient(to right, #F5F5F5, #D3D3D3);
+}
 
+#april-sykes {
+    width: 20%;
+    /* Allows the image to scale based on its container's width */
+    max-width: 200px;
+    /* Maximum width of the image */
+    height: auto;
+    /* Maintains the aspect ratio of the image */
 }
 
 body {
@@ -74,7 +82,8 @@ section {
     column-gap: 20px;
     column-rule: 2px solid #2B2B2B;
     column-gap: 20px;
-    background-color: #F5F5F5;
+
+    background: linear-gradient(to right, #F5F5F5, #D3D3D3);
     padding-top: 30px;
     padding-right: 15px;
     padding-bottom: 20px;
@@ -114,7 +123,6 @@ p {
     width: 80px;
     height: auto;
     vertical-align: middle;
-
     text-decoration: none;
 }
 
@@ -158,9 +166,6 @@ ol li {
     height: auto;
     /* Adjusts the height automatically to maintain the aspect ratio */
 }
-
-
-
 
 h4 {
     display: inline-block;
@@ -310,17 +315,72 @@ h4 {
         font-size: 8px;
     }
 }
+
 /* Smaller font size #work_history*/
 @media (max-width: 550px) {
-    #work_history{
+    #work_history {
         font-size: 8px;
     }
 }
 
 /* Smaller font size #work_history*/
 @media (max-width: 1000px) {
-    #work_history{
+    #work_history {
         font-size: 10px;
     }
 }
 
+@media (max-width: 1400px) {
+    #about_me {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 950px) {
+    #about_me {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    #about_me {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 730px) {
+    #upcoming-projects {
+        font-size: 12px;
+
+    }
+}
+
+@media (max-width: 605px) {
+    #upcoming-projects {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    #upcoming-projects {
+        font-size: 4px;
+    }
+}
+
+@media (max-width: 1340px) {
+    .third_text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 885px) {
+    .third_text {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 605px) {
+    .third_text {
+        font-size: 4px;
+    }
+}
