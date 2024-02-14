@@ -2,7 +2,6 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #1a1a1a;
-    /* Dark background for an executive look */
     color: #f0f0f0;
 }
 
@@ -84,17 +83,46 @@ footer {
 
 .profile-pic {
     width: 150px;
-    /* Adjust size as needed */
     height: auto;
-    /* Maintain aspect ratio */
     border-radius: 50%;
-    /* Circular image */
     border: 3px solid #0056b3;
-    /* Border color matching the CTA button for consistency */
     margin-bottom: 20px;
 }
 
+/* Media query for responsiveness on smaller screens */
 @media (max-width: 600px) {
+    nav#nav_menu ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav#nav_menu ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .cta {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .featured,
+    .testimonials {
+        padding: 30px 20px;
+    }
+
     .project {
         width: calc(100% - 40px);
     }
