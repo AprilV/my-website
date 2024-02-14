@@ -29,7 +29,7 @@ nav#nav_menu ul li a.active {
 }
 
 .hero {
-    
+    background: url('path/to/your/hero-image.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -89,40 +89,7 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Media query for responsiveness on smaller screens */
 @media (max-width: 600px) {
-    nav#nav_menu ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    nav#nav_menu ul li a {
-        display: block;
-        padding: 10px;
-    }
-
-    .hero {
-        padding: 50px 20px;
-    }
-
-    .hero-content h1 {
-        font-size: 2em;
-    }
-
-    .hero-content p {
-        font-size: 1em;
-    }
-
-    .cta {
-        display: block;
-        margin-top: 10px;
-    }
-
-    .featured,
-    .testimonials {
-        padding: 30px 20px;
-    }
-
     .project {
         width: calc(100% - 40px);
     }
