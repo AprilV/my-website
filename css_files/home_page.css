@@ -2,7 +2,9 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #1a1a1a;
+    /* Dark Gray */
     color: #f0f0f0;
+    /* Light Gray */
 }
 
 nav#nav_menu ul {
@@ -10,6 +12,7 @@ nav#nav_menu ul {
     padding: 0;
     text-align: center;
     background-color: #333;
+    /* Darker Gray */
 }
 
 nav#nav_menu ul li {
@@ -26,10 +29,12 @@ nav#nav_menu ul li a {
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
     background-color: #555;
+    /* Medium Gray */
 }
 
 .hero {
-    background: url('path/to/your/hero-image.jpg') no-repeat center center/cover;
+    background: url('Images/april-sykes/profile-pic1.jpg') no-repeat center center/cover;
+    /* Adjusted path for the hero image */
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -42,22 +47,27 @@ nav#nav_menu ul li a.active {
 
 .hero-content p {
     font-size: 1.2em;
+
 }
 
 .cta {
     display: inline-block;
     background-color: #0056b3;
+    /* Bright Blue */
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
+    /*Call To Action button */
 }
 
 .featured,
 .testimonials {
     padding: 50px 20px;
     text-align: center;
+    color: #f0f0f0;
+    /* Light Gray for text */
 }
 
 .projects-container {
@@ -70,12 +80,16 @@ nav#nav_menu ul li a.active {
     margin: 20px;
     padding: 20px;
     background-color: #242424;
+    /* Very Dark Gray */
     border-radius: 10px;
     width: calc(50% - 40px);
+    color: #f0f0f0;
+    /* Light Gray for text */
 }
 
 footer {
     background-color: #333;
+    /* Darker Gray */
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -86,6 +100,7 @@ footer {
     height: auto;
     border-radius: 50%;
     border: 3px solid #0056b3;
+    /* Bright Blue */
     margin-bottom: 20px;
 }
 

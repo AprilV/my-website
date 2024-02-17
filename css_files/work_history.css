@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    /* Dark background */
+    color: #e0e0e0;
+    /* Light text for readability */
+    font-family: Arial, sans-serif;
+}
+
+nav#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav#nav_menu ul li {
+    display: inline;
+}
+
+nav#nav_menu ul li a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav#nav_menu ul li a:hover,
+nav#nav_menu ul li a.active {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+#work_history,
+#employers_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#work_history_title {
+    text-align: center;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4a86e8;
+    /* Light blue for headers */
+    margin-top: 0;
+    /* Remove default top margin */
+    padding-top: 20px;
+    /* Add some padding at the top */
+}
+
+#work_history>div,
+#employers_images>div {
+    flex: 1 1 calc(33.33%);
+    /* Adjusts for 3 columns*/
+    margin: 20px;
+    background-color: #1e1e1e;
+    /* lighter dark shade for sections */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#work_history h2,
+#employers_images h4 {
+    color: #4A90E2;
+    /* Light blue for headers */
+    text-align: left;
+}
+
+small_logo {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    #work_history>div,
+    #employers_images>div {
+        flex: 1 1 100%;
+        /* columns on smaller screens */
+    }
+}

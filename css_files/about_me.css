@@ -1,0 +1,168 @@
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+    background: linear-gradient(to right, #121212, #232323);
+    /* Dark theme gradients */
+    color: #f0f0f0;
+    /* Light text for readability */
+    font-family: Arial, sans-serif;
+}
+
+nav#nav_menu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+    /* dark theme */
+}
+
+nav#nav_menu ul li {
+    display: inline;
+}
+
+nav#nav_menu ul li a {
+    color: white;
+    /* dark theme */
+    padding: 15px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav#nav_menu ul li a:hover,
+nav#nav_menu ul li a.active {
+    background-color: #555;
+    /* hover effect dark theme */
+}
+
+header {
+    text-align: center;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20%;
+    border-color: #007bff;
+    /* blue for better visibility */
+    border-style: ridge;
+    background: linear-gradient(to right, #121212, #232323);
+    /* Dark theme gradients */
+}
+
+main {
+    text-align: center;
+    background: linear-gradient(to right, #121212, #232323);
+    /* Dark theme gradients */
+    font-size: 100%;
+}
+
+#about_me_title {
+    text-align: center;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4a86e8;
+    /* Light blue for headers */
+    border-bottom: 2px solid #4a86e8;
+    /* Border color matching the header */
+    padding-bottom: 10px;
+    /* Add some padding below the border */
+    margin-bottom: 20px;
+    /* Add margin to separate it from the content */
+}
+
+#about_me {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    padding: 20px;
+}
+
+
+
+#quote q {
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #9acd32;
+    /* Light green for quotes */
+    padding-top: 10px;
+    display: inline-block;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+}
+
+#linkedin a:visited {
+    color: #dda0dd;
+    /* Soft purple for visited links */
+    text-decoration: none;
+}
+
+#linkedin a:hover {
+    font-size: 200%;
+    color: #add8e6;
+    /* blue for hover */
+    text-decoration: none;
+}
+
+.linkedin-logo {
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+#linkedin a {
+    text-decoration: none;
+    color: #add8e6;
+    /* Light blue for readability */
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: hsl(0, 0%, 20%);
+    /* Darker for footer */
+    color: white;
+    /*contrst*/
+}
+
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: center;
+}
+
+ol li {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    color: #f0f0f0;
+    /* Light grey for readability */
+}
+
+#employers_images img.small_logo {
+    width: 30%;
+    height: auto;
+}
+
+a {
+    color: #4a86e8;
+    /*blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #dda0dd;
+    /* Soft purple for visited links */
+}
+
+h1,
+h2,
+h4,
+q {
+    color: #f0f0f0;
+    /* Light text for headings and quotes */
+}
