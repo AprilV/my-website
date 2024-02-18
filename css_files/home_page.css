@@ -1,112 +1,150 @@
+/* Base Styles */
 body {
     margin-left: 15%;
+    /* content margin */
     margin-right: 15%;
+    /* right margin */
     background: linear-gradient(to right, #121212, #232323);
-    /* Dark theme gradients */
+    /* Dark theme background */
     color: #f0f0f0;
-    /* Light text for readability */
+    /* Light text*/
     font-family: Arial, sans-serif;
+    /* Default web font */
 }
 
 nav#nav_menu ul {
     list-style-type: none;
+    /* Removes bullet points */
     padding: 0;
+    /* No padding */
     text-align: center;
+    /* Centers navigation items */
     background-color: #333;
-    /* Darker Gray */
+    /* Dark gray background for nav */
 }
 
 nav#nav_menu ul li {
     display: inline;
+    /* Inline display for horizontal list */
 }
 
 nav#nav_menu ul li a {
     color: white;
+    /* White text*/
     padding: 15px 20px;
+    /* Padding*/
     text-decoration: none;
+    /* No underline*/
     display: inline-block;
+    /* Inline allows padding */
 }
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
     background-color: #555;
-    /* Medium Gray */
+    /* Medium gray for hover/active state */
 }
 
 .hero {
     background: url('Images/april-sykes/profile-pic1.jpg') no-repeat center center/cover;
-    /* Adjusted path for the hero image */
+    /* Hero image */
     color: white;
+    /* White text on dark background */
     text-align: center;
+    /* Center text */
     padding: 100px 20px;
+    /* Large padding for spacing */
 }
 
 .hero_content h1 {
     margin: 0;
+    /* Removes default margin */
     font-size: 2.5em;
+    /* Large text size */
 }
 
 .hero_content p {
     font-size: 1.2em;
-
+    /* Readable paragraph size */
 }
 
 .cta {
     display: inline-block;
+    /* Allows setting dimensions */
     background-color: #0056b3;
-    /* Bright Blue */
+    /* Bright blue button */
     color: white;
+    /* Text color */
     padding: 10px 20px;
+    /* Button padding */
     text-decoration: none;
+    /* No underline */
     border-radius: 5px;
+    /* Rounded corners */
     margin-top: 20px;
-    /*Call To Action button */
+    /* Space above button */
 }
 
 .featured,
 .testimonials {
     padding: 10px 20px;
+    /* Consistent padding */
     text-align: center;
+    /* Centered text */
     color: #f0f0f0;
-    /* Light Gray for text */
+    /* Light gray text for readability */
 }
 
 .projects-container {
     display: flex;
+    /* Flex layout for projects */
     justify-content: center;
+    /* Center items horizontally */
     flex-wrap: wrap;
+    /* Allow wrapping for responsiveness */
 }
 
 .project {
     margin: 20px;
+    /* Spacing around projects */
     padding: 20px;
+    /* Internal spacing */
     background-color: #242424;
-    /* Very Dark Gray */
+    /* Dark background for contrast */
     border-radius: 10px;
+    /* Rounded corners */
     width: calc(50% - 40px);
+    /* Responsive width with margin */
     color: #f0f0f0;
-    /* Light Gray for text */
+    /* Light gray text */
 }
 
 footer {
     text-align: center;
+    /* Center footer content */
     background-color: hsl(0, 0%, 20%);
-    /* Darker for footer */
+    /* Dark background */
     color: white;
-    /*contrst*/
+    /* White text for contrast */
 }
 
 .profile-pic {
     width: 150px;
+    /* Fixed width */
     height: auto;
+    /* Maintain aspect ratio */
     border-radius: 50%;
+    /* Circle shape */
     border: 3px solid #0056b3;
-    /* Bright Blue */
+    /* Bright blue border */
     margin-bottom: 20px;
+    /* Space below image */
 }
 
+/* Media Query */
 @media (max-width: 600px) {
     .project {
         width: calc(100% - 40px);
+        /* Full width on small screens */
     }
 }

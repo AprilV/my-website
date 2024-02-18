@@ -1,109 +1,93 @@
+/* Base Styles */
+
+main p {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
 body {
-    margin-left: 15%;
-    margin-right: 15%;
-    background: linear-gradient(to right, #121212, #232323);
-    /* Dark theme gradients */
-    color: #f0f0f0;
-    /* Light text for readability */
-    font-family: Arial, sans-serif;
+    margin-left: 15%; /* content margin */
+    margin-right: 15%; /* right margin */
+    background: linear-gradient(to right, #121212, #232323); /* Dark theme background */
+    color: #f0f0f0; /* Light text*/
+    font-family: Arial, sans-serif; /* Default web font */
 }
 
 nav#nav_menu ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    background-color: #333;
-    /* Darker Gray */
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* No padding */
+    text-align: center; /* Centers navigation items */
+    background-color: #333; /* Dark gray background for nav */
 }
 
 nav#nav_menu ul li {
-    display: inline;
+    display: inline; /* Inline display for horizontal list */
 }
 
 nav#nav_menu ul li a {
-    color: white;
-    padding: 15px 20px;
-    text-decoration: none;
-    display: inline-block;
+    color: white; /* White text*/
+    padding: 15px 20px; /* Padding*/
+    text-decoration: none; /* No underline*/
+    display: inline-block; /* Inline allows padding */
 }
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
-    background-color: #555;
-    /* Medium Gray */
-}
-
-main {
-    text-align: center;
-    padding: 20px;
-}
-
-main p,
-main a {
-    color: #f0f0f0;
-    /* Light Gray for readability */
-}
-
-main a:hover {
-    text-decoration: underline;
-    /* hover links */
-}
-
-footer {
-    text-align: center;
-    background-color: hsl(0, 0%, 20%);
-    /* Darker for footer */
-    color: white;
-    /*contrst*/
+    background-color: #555; /* Medium gray for hover/active state */
 }
 
 .screenshot_container {
     border: 2px solid #4a86e8; /* Light blue border */
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns*/
-    grid-gap: 20px 20px;
-    justify-content: center; /* This centers the grid items in the container*/
-    align-items: center;
-    max-width: 90%;
-    margin: 0 auto; /* Center the container */
-    }
-
+    padding: 10px; /* Padding inside the container */
+    display: grid; /* Uses CSS grid for layout */
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-gap: 16px; /* Spacing between grid items */
+}
 
 .screenshot {
-    max-width: 100%;
-    /* width of each screenshot */
-    height: auto;
+    max-width: 80%; /* Maximum width for screenshots */
+    height: auto; /* Automatic height to maintain aspect ratio */
+    background-color: #f8c291; /* Background color for the first picture */
+    margin: 0 auto; /* Center the pictures horizontally */
+    padding: 10px; /* Add padding around the pictures */
+}
+
+#s2 {
+    background-color: #6a89cc; /* Background color for the second picture */
+}
+
+#s3 {
+    background-color: #82ccdd; /* Background color for the third picture */
+}
+
+#s4 {
+    background-color: #b8e994; /* Background color for the fourth picture */
 }
 
 .screenshot img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Full width for images */
+    height: auto; /* Automatic height to maintain aspect ratio */
 }
 
-a {
-    color: #4a86e8;
-    /*blue for links */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:visited {
-    color: #dda0dd;
-    /* Soft purple for visited links */
+footer {
+    text-align: center; /* Center footer content */
+    background-color: hsl(0, 0%, 20%); /* Dark background */
+    color: white; /* White text for contrast */
 }
 
 .back-to-top {
-    display: block; /* block-level element */
-    text-align: center; /* Centers the text of the block */
-    color: #4a86e8; 
-    text-decoration: underline; 
-    margin: 20px auto; /*vertical spacing and centers the block horizontally */
+    /* Makes the link a block element */
+    display: block;
+    /* Centers the text within the block */
+    text-align: center;
+    /* Link color consistency */
+    color: #4a86e8;
+    /* Underline*/
+    text-decoration: underline;
+    /* Margin for spacing and centering */
+    margin: 20px auto;
 }
 
 .back-to-top:hover {
-    text-decoration: underline; /* Adds underline on hover for better interaction visibility */
+    /*underline is present for hover*/
+    text-decoration: underline;
 }

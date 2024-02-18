@@ -1,120 +1,179 @@
 body {
     margin-left: 15%;
+    /* Left margin set */
     margin-right: 15%;
+    /* Right margin set */
     background: linear-gradient(to right, #121212, #232323);
-    /* Dark theme gradients */
+    /* Background gradient */
     color: #f0f0f0;
-    /* Light text for readability */
+    /* Text color */
     font-family: Arial, sans-serif;
+    /* Font family set */
 }
 
 nav#nav_menu ul {
     list-style-type: none;
+    /* No bullet points */
     padding: 0;
+    /* No padding */
     text-align: center;
+    /* Centered text */
     background-color: #333333;
-    /* Darker Gray */
+    /* Dark background */
 }
 
 nav#nav_menu ul li {
     display: inline;
+    /* Inline list items */
 }
 
 nav#nav_menu ul li a {
     color: white;
+    /* Link color white */
     padding: 15px 20px;
+    /* Link padding */
     text-decoration: none;
+    /* No underline */
     display: inline-block;
+    /* Inline-block display */
 }
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
     background-color: #545454;
-    /* Medium Gray */
+    /* Hover/active background */
 }
 
 main {
     padding: 20px;
-}
-
-#work_history,
-#employers_images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* Main content padding */
 }
 
 #work_history_title {
     text-align: center;
-    font-size: x-large;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    /* Light blue for headers */
-    margin-top: 0;
-    /* Remove default top margin */
-    padding-top: 20px;
-    /*padding at the top */
+    /* Center title */
+}
+
+#work_history {
+    display: flex;
+    /* Flex display */
+    flex-wrap: wrap;
+    /* Enable wrapping */
+    justify-content: space-between;
+    /* Space between items */
+    border: 2px solid #4a86e8;
+    /* Border added */
+    padding: 20px;
+    /* Padding inside */
+    margin: 20px 0;
+    /* Vertical margins */
 }
 
 #work_history>div,
 #employers_images>div {
-    flex: 1 1 calc(33.33%);
-    /* Adjusts for 3 columns*/
+    flex: 1 1 calc(25% - 20px);
+    /* Flex basis calculation */
     margin: 20px;
+    /* Margins around items */
     background-color: #1e1e1e;
-    /* lighter dark shade for sections */
+    /* Item background */
     padding: 20px;
+    /* Padding inside items */
     box-sizing: border-box;
+    /* Box sizing border-box */
 }
 
 #work_history h2,
 #employers_images h4 {
     color: #4a86e8;
-    /* Light blue for headers */
+    /* Headings color */
     text-align: left;
-   
+    /* Text align left */
 }
 
-small_logo {
-    width: 100%;
+.small_logo {
+    margin: 10px;
+    /* Margin around images */
     max-width: 100px;
+    /* Max width 100px */
     height: auto;
+    /* Height auto */
+}
+
+#employers_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* Evenly spaced images */
+    align-items: center;
+    /* Vertical centering */
+    margin: 20px 0;
+    /* Vertical margins */
 }
 
 footer {
     text-align: center;
+    /* Centered footer text */
     background-color: #333333;
-    /* Darker for footer */
+    /* Footer background */
     color: white;
-    /*contrst*/
+    /* Footer text color */
 }
-
 
 a {
     color: #4a86e8;
-    /*blue for links */
+    /* Link color */
     text-decoration: none;
+    /* No text decoration */
 }
 
 a:hover {
     text-decoration: underline;
+    /* Underline on hover */
 }
 
 a:visited {
     color: #dda0dd;
-    /* Soft purple for visited links */
+    /* Visited link color */
 }
 
 .back-to-top {
-    display: block; /* block-level element */
-    text-align: center; /* Centers the text of the block */
-    color: #4a86e8; 
-    text-decoration: underline; 
-    margin: 20px auto; /*vertical spacing and centers the block horizontally */
+    display: block;
+    /* Block display */
+    text-align: center;
+    /* Center align */
+    color: #4a86e8;
+    /* Color set */
+    text-decoration: underline;
+    /* Underlined */
+    margin: 20px auto;
+    /* Centered margin */
 }
 
 .back-to-top:hover {
-    text-decoration: underline; /* Adds underline on hover for better interaction visibility */
+    text-decoration: underline;
+    /* Hover underline */
 }
 
 @media screen and (max-width: 768px) {
+
+    body,
+    nav#nav_menu ul li,
+    #work_history>div,
+    #employers_images>div {
+        margin-left: 5%;
+        /* Adjusted left margin */
+        margin-right: 5%;
+        /* Adjusted right margin */
+        display: block;
+        /* Block display */
+        width: auto;
+        /* Width auto */
+    }
+
+    #work_history>div,
+    #employers_images>div {
+        flex-basis: 100%;
+        /* Full width for small screens */
+    }
+}
