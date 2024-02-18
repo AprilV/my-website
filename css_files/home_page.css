@@ -1,10 +1,11 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    /* Dark Gray */
+    margin-left: 15%;
+    margin-right: 15%;
+    background: linear-gradient(to right, #121212, #232323);
+    /* Dark theme gradients */
     color: #f0f0f0;
-    /* Light Gray */
+    /* Light text for readability */
+    font-family: Arial, sans-serif;
 }
 
 nav#nav_menu ul {
@@ -40,12 +41,12 @@ nav#nav_menu ul li a.active {
     padding: 100px 20px;
 }
 
-.hero-content h1 {
+.hero_content h1 {
     margin: 0;
     font-size: 2.5em;
 }
 
-.hero-content p {
+.hero_content p {
     font-size: 1.2em;
 
 }
@@ -64,7 +65,7 @@ nav#nav_menu ul li a.active {
 
 .featured,
 .testimonials {
-    padding: 50px 20px;
+    padding: 10px 20px;
     text-align: center;
     color: #f0f0f0;
     /* Light Gray for text */
@@ -88,11 +89,11 @@ nav#nav_menu ul li a.active {
 }
 
 footer {
-    background-color: #333;
-    /* Darker Gray */
-    color: white;
     text-align: center;
-    padding: 10px 0;
+    background-color: hsl(0, 0%, 20%);
+    /* Darker for footer */
+    color: white;
+    /*contrst*/
 }
 
 .profile-pic {

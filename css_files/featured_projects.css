@@ -12,7 +12,7 @@ nav#nav_menu ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    background-color: #333333;
+    background-color: #333;
     /* Darker Gray */
 }
 
@@ -29,66 +29,57 @@ nav#nav_menu ul li a {
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
-    background-color: #545454;
+    background-color: #555;
     /* Medium Gray */
 }
 
 main {
-    padding: 20px;
-}
-
-#work_history,
-#employers_images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#work_history_title {
     text-align: center;
-    font-size: x-large;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    /* Light blue for headers */
-    margin-top: 0;
-    /* Remove default top margin */
-    padding-top: 20px;
-    /*padding at the top */
-}
-
-#work_history>div,
-#employers_images>div {
-    flex: 1 1 calc(33.33%);
-    /* Adjusts for 3 columns*/
-    margin: 20px;
-    background-color: #1e1e1e;
-    /* lighter dark shade for sections */
     padding: 20px;
-    box-sizing: border-box;
 }
 
-#work_history h2,
-#employers_images h4 {
-    color: #4a86e8;
-    /* Light blue for headers */
-    text-align: left;
-   
+main p,
+main a {
+    color: #f0f0f0;
+    /* Light Gray for readability */
 }
 
-small_logo {
-    width: 100%;
-    max-width: 100px;
-    height: auto;
+main a:hover {
+    text-decoration: underline;
+    /* hover links */
 }
 
 footer {
     text-align: center;
-    background-color: #333333;
+    background-color: hsl(0, 0%, 20%);
     /* Darker for footer */
     color: white;
     /*contrst*/
 }
 
+.screenshot_container {
+    border: 2px solid #4a86e8; /* Light blue border */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns*/
+    grid-gap: 20px 20px;
+    justify-content: center; /* This centers the grid items in the container*/
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto; /* Center the container */
+    }
+
+
+.screenshot {
+    max-width: 100%;
+    /* width of each screenshot */
+    height: auto;
+}
+
+.screenshot img {
+    width: 100%;
+    height: auto;
+}
 
 a {
     color: #4a86e8;
@@ -116,7 +107,3 @@ a:visited {
 .back-to-top:hover {
     text-decoration: underline; /* Adds underline on hover for better interaction visibility */
 }
-
-
-
-@media screen and (max-width: 768px) {

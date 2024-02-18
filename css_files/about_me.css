@@ -13,7 +13,7 @@ nav#nav_menu ul {
     padding: 0;
     text-align: center;
     background-color: #333;
-    /* dark theme */
+    /* Darker Gray */
 }
 
 nav#nav_menu ul li {
@@ -22,7 +22,6 @@ nav#nav_menu ul li {
 
 nav#nav_menu ul li a {
     color: white;
-    /* dark theme */
     padding: 15px 20px;
     text-decoration: none;
     display: inline-block;
@@ -31,7 +30,7 @@ nav#nav_menu ul li a {
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
     background-color: #555;
-    /* hover effect dark theme */
+    /* Medium Gray */
 }
 
 header {
@@ -144,6 +143,13 @@ ol li {
     height: auto;
 }
 
+h1,
+h2,
+h4,
+q {
+    color: #f0f0f0;
+    /* Light text for headings and quotes */
+}
 a {
     color: #4a86e8;
     /*blue for links */
@@ -159,10 +165,14 @@ a:visited {
     /* Soft purple for visited links */
 }
 
-h1,
-h2,
-h4,
-q {
-    color: #f0f0f0;
-    /* Light text for headings and quotes */
+.back-to-top {
+    display: block; /* block-level element */
+    text-align: center; /* Centers the text of the block */
+    color: #4a86e8; 
+    text-decoration: underline; 
+    margin: 20px auto; /*vertical spacing and centers the block horizontally */
+}
+
+.back-to-top:hover {
+    text-decoration: underline; /* Adds underline on hover for better interaction visibility */
 }
