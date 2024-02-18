@@ -16,7 +16,7 @@ nav#nav_menu ul {
     list-style-type: none; /* Removes bullet points */
     padding: 0; /* No padding */
     text-align: center; /* Centers navigation items */
-    background-color: #333; /* Dark gray background for nav */
+    background-color: #333333; /* Dark gray background for nav */
 }
 
 nav#nav_menu ul li {
@@ -24,7 +24,7 @@ nav#nav_menu ul li {
 }
 
 nav#nav_menu ul li a {
-    color: white; /* White text*/
+    color: #ffffff; /* White text*/
     padding: 15px 20px; /* Padding*/
     text-decoration: none; /* No underline*/
     display: inline-block; /* Inline allows padding */
@@ -32,7 +32,7 @@ nav#nav_menu ul li a {
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
-    background-color: #555; /* Medium gray for hover/active state */
+    background-color: #555555; /* Medium gray for hover/active state */
 }
 
 .screenshot_container {
@@ -70,7 +70,7 @@ nav#nav_menu ul li a.active {
 
 footer {
     text-align: center; /* Center footer content */
-    background-color: hsl(0, 0%, 20%); /* Dark background */
+    background-color: #333333; /* Dark background */
     color: white; /* White text for contrast */
 }
 

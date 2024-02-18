@@ -29,7 +29,7 @@ nav#nav_menu ul li {
 }
 
 nav#nav_menu ul li a {
-    color: white;
+    color: #ffffff;
     /* White text*/
     padding: 15px 20px;
     /* Padding*/
@@ -48,7 +48,7 @@ nav#nav_menu ul li a.active {
 .hero {
     background: url('Images/april-sykes/profile-pic1.jpg') no-repeat center center/cover;
     /* Hero image */
-    color: white;
+    color: #ffffff;
     /* White text on dark background */
     text-align: center;
     /* Center text */
@@ -73,7 +73,7 @@ nav#nav_menu ul li a.active {
     /* Allows setting dimensions */
     background-color: #0056b3;
     /* Bright blue button */
-    color: white;
+    color: #ffffff;
     /* Text color */
     padding: 10px 20px;
     /* Button padding */
@@ -124,7 +124,7 @@ footer {
     /* Center footer content */
     background-color: hsl(0, 0%, 20%);
     /* Dark background */
-    color: white;
+    color: #ffffff;
     /* White text for contrast */
 }
 

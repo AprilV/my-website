@@ -13,35 +13,36 @@ body {
 }
 
 nav#nav_menu ul {
-    /* Remove bullet points */
     list-style-type: none;
-    /* Remove padding */
+    /* Removes bullet points */
     padding: 0;
-    /* Center align text */
+    /* No padding */
     text-align: center;
-    /* Background color */
+    /* Centers navigation items */
     background-color: #333;
+    /* Dark gray background for nav */
 }
 
 nav#nav_menu ul li {
-    /* Display inline */
     display: inline;
+    /* Inline display for horizontal list */
 }
 
 nav#nav_menu ul li a {
-    /* Link color and padding */
     color: white;
+    /* White text*/
     padding: 15px 20px;
-    /* Remove underline */
+    /* Padding*/
     text-decoration: none;
-    /* Display inline-block */
+    /* No underline*/
     display: inline-block;
+    /* Inline allows padding */
 }
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
-    /* Hover background color */
-    background-color: #555;
+    background-color: #555555;
+    /* Medium gray for hover/active state */
 }
 
 header {
@@ -52,7 +53,7 @@ header {
     /* Font family */
     font-family: Arial, Helvetica, sans-serif;
     /* Border radius */
-    border-radius: 20%;
+    border-radius: 0%;
     /* Border color */
     border-color: #007bff;
     /* Border style */

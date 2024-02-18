@@ -13,35 +13,35 @@ body {
 
 nav#nav_menu ul {
     list-style-type: none;
-    /* No bullet points */
+    /* Removes bullet points */
     padding: 0;
     /* No padding */
     text-align: center;
-    /* Centered text */
-    background-color: #333333;
-    /* Dark background */
+    /* Centers navigation items */
+    background-color: #333;
+    /* Dark gray background for nav */
 }
 
 nav#nav_menu ul li {
     display: inline;
-    /* Inline list items */
+    /* Inline display for horizontal list */
 }
 
 nav#nav_menu ul li a {
-    color: white;
-    /* Link color white */
+    color: #ffffff;
+    /* White text*/
     padding: 15px 20px;
-    /* Link padding */
+    /* Padding*/
     text-decoration: none;
-    /* No underline */
+    /* No underline*/
     display: inline-block;
-    /* Inline-block display */
+    /* Inline allows padding */
 }
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
-    background-color: #545454;
-    /* Hover/active background */
+    background-color: #555555;
+    /* Medium gray for hover/active state */
 }
 
 main {
@@ -116,7 +116,7 @@ footer {
     /* Centered footer text */
     background-color: #333333;
     /* Footer background */
-    color: white;
+    color: #ffffff;
     /* Footer text color */
 }
 
