@@ -7,7 +7,7 @@ body {
     /* Background gradient */
     color: #f0f0f0;
     /* Text color */
-    font-family: Arial, sans-serif;
+    font-family: Abhaya Libre, sans-serif;
     /* Font family set */
 }
 
@@ -118,6 +118,7 @@ footer {
     /* Footer background */
     color: #ffffff;
     /* Footer text color */
+    font-family: Abhaya Libre, sans-serif;
 }
 
 a {

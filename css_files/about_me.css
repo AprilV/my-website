@@ -9,7 +9,7 @@ body {
     /* Text color */
     color: #f0f0f0;
     /* Font family */
-    font-family: Arial, sans-serif;
+    font-family: Abhaya Libre, sans-serif;
 }
 
 nav#nav_menu ul {
@@ -51,7 +51,7 @@ header {
     /* Set font size */
     font-size: 100%;
     /* Font family */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Abhaya Libre, sans-serif;
     /* Border radius */
     border-radius: 0%;
     /* Border color */
@@ -69,6 +69,7 @@ main {
     background: linear-gradient(to right, #121212, #232323);
     /* Set font size */
     font-size: 100%;
+    font-family: Abhaya Libre, sans-serif;
 }
 
 #about_me_title {
@@ -77,7 +78,7 @@ main {
     /* Set font size */
     font-size: x-large;
     /* Font family */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Abhaya Libre, sans-serif;
     /* Text color */
     color: #4a86e8;
     /* Bottom border */
@@ -86,6 +87,7 @@ main {
     padding-bottom: 10px;
     /* Margin bottom */
     margin-bottom: 20px;
+    font-family: Abhaya Libre, sans-serif;
 }
 
 #about_me {
@@ -96,13 +98,14 @@ main {
     display: flex;
     /* Padding */
     padding: 20px;
+    font-family: Abhaya Libre, sans-serif;
 }
 
 #quote q {
     /* Set font style */
     font-style: italic;
     /* Font family */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Abhaya Libre, sans-serif;
     /* Text color */
     color: #9acd32;
     /* Padding top */
@@ -113,7 +116,7 @@ main {
 
 p {
     /* Font family */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Abhaya Libre, sans-serif;
     /* Normal font weight */
     font-weight: normal;
 }
@@ -195,6 +198,7 @@ q,
 a {
     /* Text color */
     color: #f0f0f0;
+    font-family: Abhaya Libre, sans-serif;
 }
 
 a:hover {
@@ -259,6 +263,7 @@ a:visited {
         text-align: center;
         /* Decrease font size */
         font-size: smaller;
+        font-family: Abhaya Libre, sans-serif;
     }
 
     #employers_images img.small_logo {

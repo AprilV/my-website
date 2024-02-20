@@ -10,6 +10,7 @@ body {
     background: linear-gradient(to right, #121212, #232323); /* Dark background gradient */
     color: #f0f0f0; /* Light text color for readability */
     font-family: Arial, sans-serif; /* Default font */
+    font-family: Abhaya Libre, sans-serif;
 }
 
 nav#nav_menu ul {
@@ -65,6 +66,7 @@ footer {
     text-align: center; /* Centers footer content */
     background-color: #333333; /* Dark background for footer */
     color: white; /* White text color */
+    font-family: Abhaya Libre, sans-serif;
 }
 
 .back-to-top {
