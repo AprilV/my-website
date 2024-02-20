@@ -1,93 +1,80 @@
 /* Base Styles */
-
 main p {
-    text-align: center; /* Center the text */
-    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    text-align: center; /* Centers paragraph text */
+    margin-bottom: 20px; /* Adds space below paragraphs */
 }
+
 body {
-    margin-left: 15%; /* content margin */
-    margin-right: 15%; /* right margin */
-    background: linear-gradient(to right, #121212, #232323); /* Dark theme background */
-    color: #f0f0f0; /* Light text*/
-    font-family: Arial, sans-serif; /* Default web font */
+    margin-left: 15%; /* Sets left margin */
+    margin-right: 15%; /* Sets right margin */
+    background: linear-gradient(to right, #121212, #232323); /* Dark background gradient */
+    color: #f0f0f0; /* Light text color for readability */
+    font-family: Arial, sans-serif; /* Default font */
 }
 
 nav#nav_menu ul {
-    list-style-type: none; /* Removes bullet points */
-    padding: 0; /* No padding */
-    text-align: center; /* Centers navigation items */
-    background-color: #333333; /* Dark gray background for nav */
+    list-style-type: none; /* Removes bullet points from list */
+    padding: 0; /* Removes padding */
+    text-align: center; /* Centers the navigation menu */
+    background-color: #333333; /* Dark background for navigation */
 }
 
 nav#nav_menu ul li {
-    display: inline; /* Inline display for horizontal list */
+    display: inline; /* Displays list items inline */
 }
 
 nav#nav_menu ul li a {
-    color: #ffffff; /* White text*/
-    padding: 15px 20px; /* Padding*/
-    text-decoration: none; /* No underline*/
-    display: inline-block; /* Inline allows padding */
+    color: #ffffff; /* Sets link color to white */
+    padding: 15px 20px; /* Adds padding around links */
+    text-decoration: none; /* Removes underline from links */
+    display: inline-block; /* Allows for padding to affect link layout */
 }
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
-    background-color: #555555; /* Medium gray for hover/active state */
+    background-color: #555555; /* Changes background on hover/active */
 }
 
 .screenshot_container {
-    border: 2px solid #4a86e8; /* Light blue border */
+    border: 2px solid #4a86e8; /* Light blue border around container */
     padding: 10px; /* Padding inside the container */
-    display: grid; /* Uses CSS grid for layout */
-    grid-template-columns: 1fr 1fr; /* Two columns */
-    grid-gap: 16px; /* Spacing between grid items */
+    display: grid; /* Enables CSS grid layout */
+    grid-template-columns: 1fr 1fr; /* Creates a two-column grid */
+    grid-gap: 16px; /* Space between grid items */
 }
 
 .screenshot {
-    max-width: 80%; /* Maximum width for screenshots */
-    height: auto; /* Automatic height to maintain aspect ratio */
-    background-color: #f8c291; /* Background color for the first picture */
-    margin: 0 auto; /* Center the pictures horizontally */
-    padding: 10px; /* Add padding around the pictures */
-}
-
-#s2 {
-    background-color: #6a89cc; /* Background color for the second picture */
-}
-
-#s3 {
-    background-color: #82ccdd; /* Background color for the third picture */
-}
-
-#s4 {
-    background-color: #b8e994; /* Background color for the fourth picture */
+    max-width: 80%; /* Limits screenshot width, maintaining aspect ratio */
+    height: auto; /* Ensures height is auto-adjusted */
+    background-color: #f8c291; /* Background color for screenshots */
+    margin: 0 auto; /* Centers screenshots horizontally */
+    padding: 10px; /* Padding around screenshots */
 }
 
 .screenshot img {
-    width: 100%; /* Full width for images */
-    height: auto; /* Automatic height to maintain aspect ratio */
+    width: 100%; /* Full width of container */
+    height: auto; /* Height adjusts automatically */
 }
 
+/* Background colors for individual screenshots */
+#s2 { background-color: #6a89cc; }
+#s3 { background-color: #82ccdd; }
+#s4 { background-color: #b8e994; }
+
 footer {
-    text-align: center; /* Center footer content */
-    background-color: #333333; /* Dark background */
-    color: white; /* White text for contrast */
+    text-align: center; /* Centers footer content */
+    background-color: #333333; /* Dark background for footer */
+    color: white; /* White text color */
 }
 
 .back-to-top {
-    /* Makes the link a block element */
-    display: block;
-    /* Centers the text within the block */
-    text-align: center;
-    /* Link color consistency */
-    color: #4a86e8;
-    /* Underline*/
-    text-decoration: underline;
-    /* Margin for spacing and centering */
-    margin: 20px auto;
+    display: block; /* Block display for back to top link */
+    text-align: center; /* Center aligns the link */
+    color: #4a86e8; /* Link color */
+    text-decoration: underline; /* Underlined text */
+    margin: 20px auto; /* Margin for spacing, auto centers*/
 }
 
 .back-to-top:hover {
-    /*underline is present for hover*/
-    text-decoration: underline;
+    text-decoration: underline; /* Maintains underline on hover */
 }
