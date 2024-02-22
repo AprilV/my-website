@@ -1,22 +1,26 @@
 /* Global Styles */
 body {
-
+    margin-left: ;
+    margin-right: ;
+    background-size: cover;
     background: linear-gradient(to right, #121212, #232323);
+    background-position: center;
     color: #f0f0f0;
     font-family: Abhaya Libre, sans-serif;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
 }
 
-/* Navigation Styles */
+/* Ensures nav#nav_menu takes up the appropriate space and centers its content */
+nav#nav_menu {
+    text-align: center;
+    width: 100%;
+}
+
 nav#nav_menu ul {
     list-style-type: none;
     padding: 5px;
     display: inline-block;
     background-color: #333;
     border-radius: 25px;
-    /* Rounded corners */
     margin: 0 auto;
 }
 
@@ -28,27 +32,25 @@ nav#nav_menu ul li {
 nav#nav_menu ul li a {
     color: #ffffff;
     padding: 5px 20px;
-    /* thinner menu items */
     text-decoration: none;
     display: inline-block;
     border-radius: 15px;
-    /* Rounded corners */
     margin: 0 2px;
-    /* Spacing between menu items */
 }
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
     background-color: hsl(0, 0%, 33%);
     border-radius: 15px;
-    /* Rounded corners for the hover and active*/
 }
+
 
 /* Hero Section Styles */
 .hero {
     color: #cdcdcd;
     text-align: center;
     padding: 100px 20px;
+    background-image: url('../Images/tech_images/tech5.jpg');
 }
 
 .hero_content h1 {
