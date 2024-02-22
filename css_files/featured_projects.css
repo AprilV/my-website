@@ -108,7 +108,7 @@ footer {
     }
 }
 
-/* Additional Media Query for Very Small Screens */
+/*Media Query for Very Small Screens */
 @media (max-width: 480px) {
     body {
         margin-left: 5%;
@@ -116,7 +116,7 @@ footer {
     }
 
     .screenshot {
-        /* Increase padding or adjust as needed for smaller screens */
+        /* Increase padding for smaller screens */
         padding: 5px;
         /* Adjust padding for better spacing */
     }
