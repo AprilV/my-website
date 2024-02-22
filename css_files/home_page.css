@@ -3,7 +3,6 @@ body {
     margin-left: 15px;
     margin-right: 15px;
     background-size: cover;
-
     background-position: center;
     color: #f0f0f0;
     font-family: Abhaya Libre, sans-serif;
@@ -20,8 +19,8 @@ nav#nav_menu ul {
     list-style-type: none;
     padding: 5px;
     display: inline-block;
-    background-color: rgba(51, 51, 51, 0.1); 
-    border-radius: 25px; 
+    background-color: rgba(51, 51, 51, 0.1);
+    border-radius: 25px;
     margin: 0 auto;
 }
 
@@ -31,7 +30,7 @@ nav#nav_menu ul li {
 }
 
 nav#nav_menu ul li a {
-    color: #ffffff; 
+    color: #ffffff;
     padding: 5px 20px;
     text-decoration: none;
     display: inline-block;
@@ -41,7 +40,7 @@ nav#nav_menu ul li a {
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
-    background-color: rgba(255, 255, 255, 0.2); 
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
 }
 
@@ -50,12 +49,14 @@ nav#nav_menu ul li a.active {
     color: #cdcdcd;
     text-align: center;
     padding: 100px 20px;
-
 }
 
 .hero_content h1 {
-    margin: 0;
-    font-size: 2.5em;
+    margin: 0.5em 0;
+    font-size: 3em;
+    color: #32a9e2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
 }
 
 .hero_content p {
@@ -76,15 +77,45 @@ nav#nav_menu ul li a.active {
 /* Featured and Testimonials Section Styles */
 .featured,
 .testimonials {
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
     color: #f0f0f0;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 20px 0;
+}
+
+.testimonials h2,
+.featured h2 {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: inline-block;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial q {
+    font-style: italic;
+    display: block;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.testimonial p {
+    font-size: 0.9em;
+    color: #cccccc;
 }
 
 /* Projects Container Styles */
 .projects-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -92,17 +123,17 @@ nav#nav_menu ul li a.active {
 .project {
     margin: 20px;
     padding: 20px;
-    background-color: #242424;
+    background-color: #333;
     border-radius: 10px;
     width: calc(50% - 40px);
     color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Footer Styles */
-footer {
-    text-align: center;
-    background-color: hsl(0, 0%, 20%);
-    color: #ffffff;
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
 }
 
 /* Profile Picture Styles */
@@ -118,23 +149,21 @@ footer {
 .fa-server:before,
 .fa-computer-mouse:before {
     font-family: "Font Awesome 5 Free";
-}
-
-.fa-server:before {
     content: "\f233";
 }
 
-.fa-computer-mouse:before {
-    content: "\f8cc";
+/* Footer Styles */
+footer {
+    text-align: center;
+
 }
 
-/*Responsive design media q's*/
-@media (max-width: 600px) {
+/* Responsive Design Media Queries */
+@media (max-width: 768px) {
     .project {
         width: calc(100% - 40px);
     }
 }
-
 
 @media (max-width: 480px) {
     body {
@@ -143,12 +172,16 @@ footer {
     }
 
     nav#nav_menu ul {
-        padding: 2px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     nav#nav_menu ul li a {
         padding: 5px 10px;
         font-size: 0.8em;
+       
     }
 
     .hero {
@@ -157,6 +190,7 @@ footer {
 
     .hero_content h1 {
         font-size: 1.5em;
+        /* Adjusted font size for smaller screens */
     }
 
     .hero_content p {
@@ -168,13 +202,13 @@ footer {
         font-size: 0.9em;
     }
 
-    .projects-container .project {
+    .projects-container .project,
+    .testimonial {
         width: 100%;
-        margin: 10px 0;
-        padding: 15px;
     }
 
     .profile-pic {
         width: 100px;
+        /* Adjusted size for smaller screens */
     }
 }
