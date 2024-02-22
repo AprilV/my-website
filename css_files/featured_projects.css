@@ -9,13 +9,17 @@ body {
 }
 
 /* Navigation Styles */
+nav#nav_menu {
+    text-align: center;
+    width: 100%;
+}
+
 nav#nav_menu ul {
     list-style-type: none;
     padding: 5px;
     display: inline-block;
-    background-color: #333;
-    border-radius: 25px;
-    /* Rounded corners */
+    background-color: rgba(51, 51, 51, 0.1); 
+    border-radius: 25px; 
     margin: 0 auto;
 }
 
@@ -25,19 +29,20 @@ nav#nav_menu ul li {
 }
 
 nav#nav_menu ul li a {
-    color: #ffffff;
+    color: #ffffff; 
     padding: 5px 20px;
     text-decoration: none;
     display: inline-block;
     border-radius: 15px;
-        margin: 0 2px;
-    }
+    margin: 0 2px;
+}
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
-    background-color: hsl(0, 0%, 33%);
+    background-color: rgba(255, 255, 255, 0.2); 
     border-radius: 15px;
-    }
+}
+
 
 /* Main Content Paragraph Styles */
 main p {

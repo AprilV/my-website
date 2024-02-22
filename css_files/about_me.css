@@ -13,13 +13,17 @@ nav#nav_menu {
 }
 
 /* Navigation Styles */
+nav#nav_menu {
+    text-align: center;
+    width: 100%;
+}
+
 nav#nav_menu ul {
     list-style-type: none;
     padding: 5px;
     display: inline-block;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.1);
     border-radius: 25px;
-    /* Rounded corners */
     margin: 0 auto;
 }
 
@@ -31,21 +35,52 @@ nav#nav_menu ul li {
 nav#nav_menu ul li a {
     color: #ffffff;
     padding: 5px 20px;
-    /* thinner menu items */
     text-decoration: none;
     display: inline-block;
     border-radius: 15px;
-    /* Rounded corners */
     margin: 0 2px;
-    /* Spacing between menu items */
 }
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
-    background-color: hsl(0, 0%, 33%);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
-    /* Rounded corners for the hover and active*/
 }
+
+nav#nav_menu {
+    text-align: center;
+    width: 100%;
+}
+
+nav#nav_menu ul {
+    list-style-type: none;
+    padding: 5px;
+    display: inline-block;
+    background-color: rgba(51, 51, 51, 0.1);
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+nav#nav_menu ul li {
+    display: inline;
+    margin: 0;
+}
+
+nav#nav_menu ul li a {
+    color: #ffffff;
+    padding: 5px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    margin: 0 2px;
+}
+
+nav#nav_menu ul li a:hover,
+nav#nav_menu ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
 
 /* Header Styles */
 header {
