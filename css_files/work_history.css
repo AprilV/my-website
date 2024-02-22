@@ -24,26 +24,22 @@ nav#nav_menu ul {
 
 nav#nav_menu ul li {
     display: inline;
-    s margin: 0;
+    margin: 0;
 }
 
 nav#nav_menu ul li a {
     color: #ffffff;
     padding: 5px 20px;
-    /* thinner menu items */
     text-decoration: none;
     display: inline-block;
     border-radius: 15px;
-    /* Rounded corners */
     margin: 0 2px;
-    /* Spacing between menu items */
 }
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
     background-color: hsl(0, 0%, 33%);
     border-radius: 15px;
-    /* Rounded corners for the hover and active*/
 }
 
 /* Main Content Styles */

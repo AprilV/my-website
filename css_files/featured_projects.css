@@ -27,21 +27,17 @@ nav#nav_menu ul li {
 nav#nav_menu ul li a {
     color: #ffffff;
     padding: 5px 20px;
-    /* thinner menu items */
     text-decoration: none;
     display: inline-block;
     border-radius: 15px;
-    /* Rounded corners */
-    margin: 0 2px;
-    /* Spacing between menu items */
-}
+        margin: 0 2px;
+    }
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
     background-color: hsl(0, 0%, 33%);
     border-radius: 15px;
-    /* Rounded corners for the hover and active*/
-}
+    }
 
 /* Main Content Paragraph Styles */
 main p {
@@ -55,7 +51,7 @@ main p {
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Two-column layout by default */
+    /* Two-column*/
     grid-gap: 16px;
 }
 
@@ -73,7 +69,7 @@ main p {
     height: auto;
 }
 
-/* Individual Screenshot Background Colors */
+/*Screenshot Background Colors */
 #s2 {
     background-color: #6a89cc;
 }
@@ -111,15 +107,14 @@ footer {
 @media (max-width: 768px) {
     .screenshot_container {
         grid-template-columns: 1fr;
-        /* Single-column layout for small screens */
+        /* Single-column*/
     }
 
     .screenshot {
         max-width: 100%;
-        /* Allow screenshots to use full container width */
+        
     }
 }
-
 /*Media Query for Very Small Screens */
 @media (max-width: 480px) {
     body {
@@ -128,19 +123,17 @@ footer {
     }
 
     .screenshot {
-        /* Increase padding for smaller screens */
-        padding: 5px;
-        /* Adjust padding for better spacing */
+                padding: 5px;
+       
     }
 
     nav#nav_menu ul li a {
         padding: 10px 15px;
-        /* Adjust padding for smaller screen navigation links */
+        
     }
 
     main p,
     footer {
         font-size: smaller;
-        /* Adjust font size for readability on smaller screens */
-    }
+           }
 }
