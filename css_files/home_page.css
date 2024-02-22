@@ -3,13 +3,14 @@ body {
     margin-left: 15px;
     margin-right: 15px;
     background-size: cover;
-    background: linear-gradient(to right, #121212, #232323);
+    
     background-position: center;
     color: #f0f0f0;
     font-family: Abhaya Libre, sans-serif;
+    background-image: url('../Images/tech_images/tech8.jpg');
 }
 
-/* Ensures nav#nav_menu takes up the appropriate space and centers its content */
+/* Navigation Styles */
 nav#nav_menu {
     text-align: center;
     width: 100%;
@@ -44,13 +45,11 @@ nav#nav_menu ul li a.active {
     border-radius: 15px;
 }
 
-
 /* Hero Section Styles */
 .hero {
     color: #cdcdcd;
     text-align: center;
     padding: 100px 20px;
-    background-image: url('../Images/tech_images/tech7.jpg');
     
 }
 
@@ -129,9 +128,53 @@ footer {
     content: "\f8cc";
 }
 
-/* Responsive Design for Projects */
+/*Responsive design media q's*/
 @media (max-width: 600px) {
     .project {
         width: calc(100% - 40px);
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    nav#nav_menu ul {
+        padding: 2px;
+    }
+
+    nav#nav_menu ul li a {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+
+    .hero {
+        padding: 50px 10px;
+    }
+
+    .hero_content h1 {
+        font-size: 1.5em;
+    }
+
+    .hero_content p {
+        font-size: 1em;
+    }
+
+    .cta {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    .projects-container .project {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .profile-pic {
+        width: 100px;
     }
 }
