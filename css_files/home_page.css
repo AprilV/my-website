@@ -46,7 +46,6 @@ nav#nav_menu ul li a.active {
 
 /* Hero Section Styles */
 .hero {
-    background: url('/Images/tech_images/tech5.jpg') no-repeat center center/cover;
     color: #cdcdcd;
     text-align: center;
     padding: 100px 20px;
