@@ -5,30 +5,46 @@ body {
     background: linear-gradient(to right, #121212, #232323);
     color: #f0f0f0;
     font-family: Abhaya Libre, sans-serif;
+    text-align: center;
+}
+
+nav#nav_menu {
+    padding-bottom: 20px;
 }
 
 /* Navigation Styles */
 nav#nav_menu ul {
     list-style-type: none;
-    padding: 0;
-    text-align: center;
+    padding: 5px;
+    display: inline-block;
     background-color: #333;
+    border-radius: 25px;
+    /* Rounded corners */
+    margin: 0 auto;
 }
 
 nav#nav_menu ul li {
     display: inline;
+    margin: 0;
 }
 
 nav#nav_menu ul li a {
-    color: white;
-    padding: 15px 20px;
+    color: #ffffff;
+    padding: 5px 20px;
+    /* thinner menu items */
     text-decoration: none;
     display: inline-block;
+    border-radius: 15px;
+    /* Rounded corners */
+    margin: 0 2px;
+    /* Spacing between menu items */
 }
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
-    background-color: #555555;
+    background-color: hsl(0, 0%, 33%);
+    border-radius: 15px;
+    /* Rounded corners for the hover and active*/
 }
 
 /* Header Styles */
