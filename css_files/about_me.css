@@ -1,254 +1,187 @@
-/* Base Styles */
+/* Global Styles */
 body {
-    /* Set left margin */
     margin-left: 15%;
-    /* Set right margin */
     margin-right: 15%;
-    /* Set background gradient */
     background: linear-gradient(to right, #121212, #232323);
-    /* Text color */
     color: #f0f0f0;
-    /* Font family */
     font-family: Abhaya Libre, sans-serif;
 }
 
+/* Navigation Styles */
 nav#nav_menu ul {
     list-style-type: none;
-    /* Removes bullet points */
     padding: 0;
-    /* No padding */
     text-align: center;
-    /* Centers navigation items */
     background-color: #333;
-    /* Dark gray background for nav */
 }
 
 nav#nav_menu ul li {
     display: inline;
-    /* Inline display for horizontal list */
 }
 
 nav#nav_menu ul li a {
     color: white;
-    /* White text*/
     padding: 15px 20px;
-    /* Padding*/
     text-decoration: none;
-    /* No underline*/
     display: inline-block;
-    /* Inline allows padding */
 }
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
     background-color: #555555;
-    /* Medium gray for hover/active state */
 }
 
+/* Header Styles */
 header {
-    /* Center align text */
     text-align: center;
-    /* Set font size */
     font-size: 100%;
-    /* Font family */
     font-family: Abhaya Libre, sans-serif;
-    /* Border radius */
     border-radius: 0%;
-    /* Border color */
     border-color: #007bff;
-    /* Border style */
     border-style: ridge;
-    /* Background gradient */
     background: linear-gradient(to right, #121212, #232323);
 }
 
+/* Main Content Styles */
 main {
-    /* Center align text */
     text-align: center;
-    /* Background gradient */
     background: linear-gradient(to right, #121212, #232323);
-    /* Set font size */
     font-size: 100%;
     font-family: Abhaya Libre, sans-serif;
 }
 
+/* About Me Section Styles */
 #about_me_title {
-    /* Center align text */
     text-align: center;
-    /* Set font size */
     font-size: x-large;
-    /* Font family */
     font-family: Abhaya Libre, sans-serif;
-    /* Text color */
     color: #4a86e8;
-    /* Bottom border */
     border-bottom: 2px solid #4a86e8;
-    /* Padding bottom */
     padding-bottom: 10px;
-    /* Margin bottom */
     margin-bottom: 20px;
-    font-family: Abhaya Libre, sans-serif;
 }
 
 #about_me {
-    /* Set left and right margin */
     margin-left: 20px;
     margin-right: 20px;
-    /* Use flexbox */
     display: flex;
-    /* Padding */
-    padding: 20px;
     font-family: Abhaya Libre, sans-serif;
 }
 
+/* Quote Styles */
 #quote q {
-    /* Set font style */
     font-style: italic;
-    /* Font family */
     font-family: Abhaya Libre, sans-serif;
-    /* Text color */
     color: #9acd32;
-    /* Padding top */
     padding-top: 10px;
-    /* Display inline-block */
     display: inline-block;
 }
 
+/* Paragraph Styles */
 p {
-    /* Font family */
     font-family: Abhaya Libre, sans-serif;
-    /* Normal font weight */
     font-weight: normal;
 }
 
+/* LinkedIn Link Styles */
 #linkedin a:visited {
-    /* Link color and underline */
     color: #dda0dd;
     text-decoration: none;
 }
 
 #linkedin a:hover {
-    /* Increase font size on hover */
     font-size: 200%;
-    /* Link color */
     color: #add8e6;
-    /* Remove underline */
     text-decoration: none;
 }
 
 .linkedin-logo {
-    /* Set width and height */
     width: 80px;
     height: auto;
-    /* Align vertically */
     vertical-align: middle;
-    /* Remove underline */
     text-decoration: none;
 }
 
 #linkedin a {
-    /* Remove underline */
     text-decoration: none;
-    /* Link color */
     color: #add8e6;
-    /* Bold font weight */
     font-weight: bold;
 }
 
+/* Footer Styles */
 footer {
-    /* Center align text */
     text-align: center;
-    /* Background color */
     background-color: hsl(0, 0%, 20%);
-    /* Text color */
     color: white;
 }
 
+/* Ordered List Styles */
 ol {
-    /* Inside list-style position */
     list-style-position: inside;
-    /* Remove padding left */
     padding-left: 0;
-    /* Center align text */
     text-align: center;
 }
 
 ol li {
-    /* Display inline-block */
     display: inline-block;
-    /* Full width */
     width: 100%;
-    /* Center margin */
     margin: 0 auto;
-    /* Text color */
     color: #f0f0f0;
 }
 
+/* Employer Images Styles */
 #employers_images img.small_logo {
-    /* Set width */
     width: 30%;
-    /* Auto height */
     height: auto;
 }
 
+/* Heading, Quote, Link Global Styles */
 h1,
 h2,
 h4,
 q,
 a {
-    /* Text color */
     color: #f0f0f0;
     font-family: Abhaya Libre, sans-serif;
 }
 
+/* Link Hover Styles */
 a:hover {
-    /* Underline on hover */
     text-decoration: underline;
 }
 
+/* Visited Link Styles */
 a:visited {
-    /* Visited link color */
     color: #dda0dd;
 }
 
+/* Back to Top Link Styles */
 .back-to-top {
-    /* Center align text */
     display: block;
-    /* Center align text */
     text-align: center;
-    /* Link color */
     color: #4a86e8;
-    /* Underline */
     text-decoration: underline;
-    /* Center margin */
     margin: 20px auto;
 }
 
 .back-to-top:hover {
-    /* Underline on hover */
     text-decoration: underline;
 }
 
-/* Media Queries */
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-
-    /* Set left and right margin */
     body {
         margin-left: 5%;
         margin-right: 5%;
     }
 
     nav#nav_menu ul li {
-        /* Display block */
         display: block;
-        /* Center align text */
         text-align: center;
     }
 
     #about_me {
-        /* Flex direction column */
         flex-direction: column;
-        /* Remove margin */
         margin: 0;
     }
 
@@ -259,22 +192,17 @@ a:visited {
     .linkedin-logo,
     #quote q,
     p {
-        /* Center align text */
         text-align: center;
-        /* Decrease font size */
         font-size: smaller;
         font-family: Abhaya Libre, sans-serif;
     }
 
     #employers_images img.small_logo {
-        /* Set width */
         width: 50%;
     }
 }
 
 @media (max-width: 480px) {
-
-    /* Decrease font size */
     body,
     header,
     main,
@@ -282,21 +210,3 @@ a:visited {
     #about_me,
     #linkedin a,
     #quote q,
-    p {
-        font-size: 90%;
-    }
-
-    nav#nav_menu ul,
-    #about_me {
-        /* Remove padding and margin */
-        padding: 0;
-        margin: 0;
-    }
-
-    #employers_images img.small_logo {
-        /* Set maximum width */
-        max-width: 80px;
-        /* Adjust for very small screens */
-        /* Adjusts for very small screens */
-    }
-}

@@ -1,4 +1,4 @@
-/* Base Styles */
+/* Global Styles */
 body {
     margin-left: 15%;
     margin-right: 15%;
@@ -7,6 +7,7 @@ body {
     font-family: Abhaya Libre, sans-serif;
 }
 
+/* Navigation Styles */
 nav#nav_menu ul {
     list-style-type: none;
     padding: 0;
@@ -30,25 +31,24 @@ nav#nav_menu ul li a.active {
     background-color: #555;
 }
 
+/* Hero Section Styles */
 .hero {
     background: url('Images/april-sykes/profile-pic1.jpg') no-repeat center center/cover;
     color: #ffffff;
     text-align: center;
     padding: 100px 20px;
-    font-family: Abhaya Libre, sans-serif;
 }
 
 .hero_content h1 {
     margin: 0;
     font-size: 2.5em;
-    font-family: Abhaya Libre, sans-serif;
 }
 
 .hero_content p {
     font-size: 1.2em;
-    font-family: Abhaya Libre, sans-serif;
 }
 
+/* Call to Action Button Styles */
 .cta {
     display: inline-block;
     background-color: #0056b3;
@@ -59,22 +59,22 @@ nav#nav_menu ul li a.active {
     margin-top: 20px;
 }
 
+/* Featured and Testimonials Section Styles */
 .featured,
 .testimonials {
     padding: 10px 20px;
     text-align: center;
     color: #f0f0f0;
-    font-family: Abhaya Libre, sans-serif;
 }
 
+/* Projects Container Styles */
 .projects-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font: italic;
-    font-family: Abhaya Libre, sans-serif;
 }
 
+/* Individual Project Styles */
 .project {
     margin: 20px;
     padding: 20px;
@@ -82,16 +82,16 @@ nav#nav_menu ul li a.active {
     border-radius: 10px;
     width: calc(50% - 40px);
     color: #f0f0f0;
-    font-family: Abhaya Libre, sans-serif;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     background-color: hsl(0, 0%, 20%);
     color: #ffffff;
-    font-family: Abhaya Libre, sans-serif;
 }
 
+/* Profile Picture Styles */
 .profile-pic {
     width: 150px;
     height: auto;
@@ -101,17 +101,20 @@ footer {
 }
 
 /* Font Awesome Icons */
+.fa-server:before,
+.fa-computer-mouse:before {
+    font-family: "Font Awesome 5 Free";
+}
+
 .fa-server:before {
     content: "\f233";
-    font-family: "Font Awesome 5 Free";
 }
 
 .fa-computer-mouse:before {
     content: "\f8cc";
-    font-family: "Font Awesome 5 Free";
 }
 
-/* Media Query */
+/* Responsive Design for Projects */
 @media (max-width: 600px) {
     .project {
         width: calc(100% - 40px);

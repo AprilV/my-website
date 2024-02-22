@@ -1,82 +1,109 @@
-/* Base Styles */
-main p {
-    text-align: center; /* Centers paragraph text */
-    margin-bottom: 20px; /* Adds space below paragraphs */
-}
-
+/* Global Styles */
 body {
-    margin-left: 15%; /* Sets left margin */
-    margin-right: 15%; /* Sets right margin */
-    background: linear-gradient(to right, #121212, #232323); /* Dark background gradient */
-    color: #f0f0f0; /* Light text color for readability */
-    font-family: Arial, sans-serif; /* Default font */
-    font-family: Abhaya Libre, sans-serif;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: linear-gradient(to right, #121212, #232323);
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
+/* Navigation Menu Styles */
 nav#nav_menu ul {
-    list-style-type: none; /* Removes bullet points from list */
-    padding: 0; /* Removes padding */
-    text-align: center; /* Centers the navigation menu */
-    background-color: #333333; /* Dark background for navigation */
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333333;
 }
 
 nav#nav_menu ul li {
-    display: inline; /* Displays list items inline */
+    display: inline;
 }
 
 nav#nav_menu ul li a {
-    color: #ffffff; /* Sets link color to white */
-    padding: 15px 20px; /* Adds padding around links */
-    text-decoration: none; /* Removes underline from links */
-    display: inline-block; /* Allows for padding to affect link layout */
+    color: #ffffff;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
-    background-color: #555555; /* Changes background on hover/active */
+    background-color: #555555;
 }
 
+/* Main Content Paragraph Styles */
+main p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Screenshot Container Styles */
 .screenshot_container {
-    border: 2px solid #4a86e8; /* Light blue border around container */
-    padding: 10px; /* Padding inside the container */
-    display: grid; /* Enables CSS grid layout */
-    grid-template-columns: 1fr 1fr; /* Creates a two-column grid */
-    grid-gap: 16px; /* Space between grid items */
+    border: 2px solid #4a86e8;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two-column layout by default */
+    grid-gap: 16px;
 }
 
+/* Screenshot Styles */
 .screenshot {
-    max-width: 80%; /* Limits screenshot width, maintaining aspect ratio */
-    height: auto; /* Ensures height is auto-adjusted */
-    background-color: #f8c291; /* Background color for screenshots */
-    margin: 0 auto; /* Centers screenshots horizontally */
-    padding: 10px; /* Padding around screenshots */
+    max-width: 80%;
+    height: auto;
+    background-color: #f8c291;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .screenshot img {
-    width: 100%; /* Full width of container */
-    height: auto; /* Height adjusts automatically */
+    width: 100%;
+    height: auto;
 }
 
-/* Background colors for individual screenshots */
-#s2 { background-color: #6a89cc; }
-#s3 { background-color: #82ccdd; }
-#s4 { background-color: #b8e994; }
+/* Individual Screenshot Background Colors */
+#s2 {
+    background-color: #6a89cc;
+}
 
+#s3 {
+    background-color: #82ccdd;
+}
+
+#s4 {
+    background-color: #b8e994;
+}
+
+/* Footer Styles */
 footer {
-    text-align: center; /* Centers footer content */
-    background-color: #333333; /* Dark background for footer */
-    color: white; /* White text color */
+    text-align: center;
+    background-color: #333333;
+    color: white;
     font-family: Abhaya Libre, sans-serif;
 }
 
+/* Back to Top Link Styles */
 .back-to-top {
-    display: block; /* Block display for back to top link */
-    text-align: center; /* Center aligns the link */
-    color: #4a86e8; /* Link color */
-    text-decoration: underline; /* Underlined text */
-    margin: 20px auto; /* Margin for spacing, auto centers*/
+    display: block;
+    text-align: center;
+    color: #4a86e8;
+    text-decoration: underline;
+    margin: 20px auto;
 }
 
 .back-to-top:hover {
-    text-decoration: underline; /* Maintains underline on hover */
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 768px) {
+    .screenshot_container {
+        grid-template-columns: 1fr;
+        /* Single-column layout for small screens */
+    }
+
+    .screenshot {
+        max-width: 100%;
+        /* Allow screenshots to use full container width */
+    }
 }
