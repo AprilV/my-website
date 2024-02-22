@@ -96,7 +96,7 @@ footer {
 }
 
 /* Media Queries for Responsive Adjustments */
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
     .screenshot_container {
         grid-template-columns: 1fr;
         /* Single-column layout for small screens */
@@ -105,5 +105,30 @@ footer {
     .screenshot {
         max-width: 100%;
         /* Allow screenshots to use full container width */
+    }
+}
+
+/* Additional Media Query for Very Small Screens */
+@media (max-width: 480px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .screenshot {
+        /* Increase padding or adjust as needed for smaller screens */
+        padding: 5px;
+        /* Adjust padding for better spacing */
+    }
+
+    nav#nav_menu ul li a {
+        padding: 10px 15px;
+        /* Adjust padding for smaller screen navigation links */
+    }
+
+    main p,
+    footer {
+        font-size: smaller;
+        /* Adjust font size for readability on smaller screens */
     }
 }
