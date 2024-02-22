@@ -96,7 +96,7 @@ footer {
 }
 
 /* Media Queries for Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .screenshot_container {
         grid-template-columns: 1fr;
         /* Single-column layout for small screens */
