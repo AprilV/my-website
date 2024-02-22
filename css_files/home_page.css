@@ -1,10 +1,11 @@
 /* Global Styles */
 body {
-    margin-left: 15%;
-    margin-right: 15%;
+    
     background: linear-gradient(to right, #121212, #232323);
     color: #f0f0f0;
     font-family: Abhaya Libre, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Navigation Styles */
@@ -13,7 +14,7 @@ nav#nav_menu ul {
     padding: 0;
     text-align: center;
     background-color: #333;
-}
+   }
 
 nav#nav_menu ul li {
     display: inline;
@@ -24,7 +25,7 @@ nav#nav_menu ul li a {
     padding: 15px 20px;
     text-decoration: none;
     display: inline-block;
-}
+    }
 
 nav#nav_menu ul li a:hover,
 nav#nav_menu ul li a.active {
@@ -33,7 +34,7 @@ nav#nav_menu ul li a.active {
 
 /* Hero Section Styles */
 .hero {
-    background: url('Images/april-sykes/profile-pic1.jpg') no-repeat center center/cover;
+    background: url('/Images/tech_images/tech5.jpg') no-repeat center center/cover;
     color: #ffffff;
     text-align: center;
     padding: 100px 20px;
