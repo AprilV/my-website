@@ -8,7 +8,8 @@ body {
 }
 
 /* Navigation Styles */
-nav#nav_menu {'../Images/tech_images/tech8.jpg');
+nav#nav_menu {
+    '../Images/tech_images/tech8.jpg');
     text-align: center;
     width: 100%;
 }
@@ -90,6 +91,7 @@ main {
     align-items: center;
     margin: 20px 0;
 }
+
 
 /* Footer Styles */
 footer {

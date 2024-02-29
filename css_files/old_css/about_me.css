@@ -14,7 +14,6 @@ nav#nav_menu {
     text-align: center;
     width: 100%;
     padding-bottom: 20px;
-    
 }
 
 nav#nav_menu ul {
@@ -126,7 +125,7 @@ p {
 /* Footer Styles */
 footer {
     text-align: center;
-        color: white;
+    color: white;
 }
 
 /* Ordered List Styles */
@@ -182,7 +181,7 @@ a:visited {
     text-decoration: underline;
 }
 
-/* Media Queries for Responsive Design */
+/* Responsive Design Media Queries */
 @media (max-width: 768px) {
     body {
         margin-left: 5%;
@@ -217,15 +216,5 @@ a:visited {
 }
 
 @media (max-width: 480px) {
-
-    body,
-    header,
-    main,
-    footer,
-    #about_me,
-    #linkedin a,
-    #quote q,
-    {
-    /* Copy from above */
-}
+    /* Copy media query styles from above */
 }
