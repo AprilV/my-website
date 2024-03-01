@@ -554,3 +554,21 @@ footer {
         font-family: 'Helvetica', Arial, sans-serif;
     }
 }
+@media screen and (max-width: 768px) {
+    /* ... other styles ... */
+    .featured,
+    .testimonials {
+        margin: 20px auto; /* Adjust margins for smaller screens */
+        width: auto; /* Set width to auto or a specific percentage */
+    }
+}
+
+@media (max-width: 480px) {
+    /* ... other styles ... */
+    .projects_container,
+    .project,
+    .testimonial {
+        width: 100%; /* Ensure they span the full width */
+        /* Adjust padding and margins as needed */
+    }
+}
