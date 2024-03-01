@@ -445,18 +445,10 @@ footer {
 
 /* Adjustments for responsive design */
 @media screen and (max-width: 768px) {
-
     #work_history>div,
     .project {
-        width: calc(100% - 40px);
-        font-family: 'Helvetica', Arial, sans-serif;
-    }
-}
-
-@media (max-width: 768px) {
-    .project {
-        width: calc(100% - 40px);
-        font-family: 'Helvetica', Arial, sans-serif;
+        width: calc(100% - 40px); /* Adjust width to fill the entire container */
+        font-family: 'Helvetica', Arial, sans-serif; /* Apply font family */
     }
 }
 
