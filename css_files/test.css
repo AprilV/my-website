@@ -555,20 +555,35 @@ footer {
     }
 }
 @media screen and (max-width: 768px) {
-    /* ... other styles ... */
     .featured,
     .testimonials {
-        margin: 20px auto; /* Adjust margins for smaller screens */
-        width: auto; /* Set width to auto or a specific percentage */
+        margin: 20px; /* Adjust the side margins or set to 0 if needed */
+        padding: 20px; /* Add padding for spacing within the container */
+        box-sizing: border-box; /* Include padding in the width calculation */
     }
 }
 
 @media (max-width: 480px) {
-    /* ... other styles ... */
-    .projects_container,
+    .projects_container {
+        display: block; /* Switch to block if flex is causing issues */
+        height: auto; /* Remove the 100vh to allow content to determine height */
+        padding: 20px 0; /* Adjust padding to ensure content fits */
+    }
+
     .project,
     .testimonial {
-        width: 100%; /* Ensure they span the full width */
-        /* Adjust padding and margins as needed */
+        /* Ensure these elements do not have fixed width or height that could cause overflow */
+        margin-bottom: 20px; /* Add space between items */
+    }
+
+    .profile-pic {
+        width: 80px; /* Adjust profile image size if necessary */
     }
 }
+
+/* You might also want to ensure the images scale properly */
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
