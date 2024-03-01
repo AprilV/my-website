@@ -1,0 +1,29 @@
+1. I did notice that not all of your links have hover effects though, Your Learn More button on the home page has no hover effect and neither does the Back to Top link. When other things have hover effects, it's a bit weird.
+Change: Added hover effect on all links.
+.learn_more:hover {
+    background-color: #004494; /* Darker shade for hover state */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}
+
+2. I like the consistency of your website. Everything is centered (minus the resume on Work History) and has a consistent theme.
+    Change: I have not only created margins but added a transparent background sections for each employer behind the text for consistancy. Text is now centered.
+
+3. However, on mobile, your nav bar changes on every page. Your homepage and Featured Projects nav bar has smaller text and is horizontal while the About Me and Work History pages are vertical.
+   Change: Streamlined and consolidated css code to one stylesheet. Nav bar is now consistant across all pages.
+
+4. This last one is personal preference, but the bright blue outline around the images on the Featured Projects page is kinda distracting (on mobile). I think it's there for consistency as it is also around the text on the Work History page, but it doesn't look as good around the images. Up to you though, it's not a big thing.
+   Change:I agree. Removed the blue border around the screenshots for decluttering/less busy.
+
+-Ollie Schmick
+ 
+
+ 1. A couple things I would adjust is on the about me page try using a transition on the linked in page mouse over its jumpy cause it goes too quickly. 
+    Change: The hover effect is now visible before clicking the link.
+
+ 2. Also on this page if you add margins on the page it gives a better readability view. 
+    Change: I have not only created margins but added a transparent background behind the text for consistancy.
+
+ 3. On the work history page there are icons at the bottom that are just images.I would either explain them or make them links to respective websites. 
+    Change: The icons at the bottom are the employers I worked for. I have placed them next to their respective work history for the company.
+
+ -Amanda Bradburn
