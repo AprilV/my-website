@@ -1,4 +1,4 @@
-/* Global Styles */
+/* -------------- Global Styles -------------- */
 body {
     margin-left: 15px;
     margin-right: 15px;
@@ -9,7 +9,7 @@ body {
     background-image: url('../Images/tech_images/tech8.jpg');
 }
 
-/* Navigation Styles */
+/* -------------- Navigation Menu Styles -------------- */
 nav#nav_menu {
     text-align: center;
     width: 100%;
@@ -42,33 +42,15 @@ nav#nav_menu ul li a {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Hover effect for navigation links */
 nav#nav_menu ul li a:hover {
     background-color: #6a9fe8;
 }
 
-/* Active state for navigation links */
 nav#nav_menu ul li a.active {
     background-color: #2f5cb3;
 }
 
-/* Quote Styles */
-#quote {
-    text-align: center;
-    font-family: 'Helvetica', Arial, sans-serif;
-}
-
-#quote q {
-    font-style: italic;
-    font-family: 'Helvetica', Arial, sans-serif;
-    color: #4a86e8;
-    padding-top: 10px;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Hero Section Styles */
+/* -------------- Hero Section Styles -------------- */
 .hero {
     color: #cdcdcd;
     text-align: center;
@@ -90,7 +72,6 @@ nav#nav_menu ul li a.active {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Call to Action Button Styles */
 .learn_more {
     display: inline-block;
     background-color: #0056b3;
@@ -103,17 +84,15 @@ nav#nav_menu ul li a.active {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Hover effect for 'Learn More' button */
 .learn_more:hover {
     background-color: #6a9fe8;
 }
 
-/* Active state for 'Learn More' button */
 .learn_more:active {
     background-color: #2f5cb3;
 }
 
-/* Featured and Testimonials Section Styles */
+/* -------------- Featured Projects and Testimonials Styles -------------- */
 .featured,
 .testimonials {
     padding: 20px;
@@ -179,7 +158,7 @@ nav#nav_menu ul li a.active {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Profile Picture Styles */
+/* -------------- Profile Picture Styles -------------- */
 .profile-pic {
     width: 150px;
     height: auto;
@@ -189,20 +168,19 @@ nav#nav_menu ul li a.active {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Font Awesome Icons */
+/* -------------- Font Awesome Icons Styles -------------- */
 .fa-server:before,
 .fa-computer-mouse:before {
     font-family: "Font Awesome 5 Free";
     content: "\f233";
 }
 
-/* About Me Page Styles */
+/* -------------- About Me Section Styles -------------- */
 body.about-me {
     text-align: center;
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* About Me Header Styles */
 .about-me-header {
     text-align: center;
     display: flex;
@@ -222,7 +200,6 @@ body.about-me {
     margin-bottom: 20px;
 }
 
-/* About Me Section Styles */
 #about_me {
     margin: 0 auto;
     text-align: center;
@@ -240,6 +217,7 @@ body.about-me {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
+/* -------------- LinkedIn Styles -------------- */
 #linkedin {
     text-align: center;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -273,7 +251,7 @@ body.about-me {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Work History Section Styles */
+/* -------------- Work History Section Styles -------------- */
 #work_history_title {
     text-align: center;
     color: #4a86e8;
@@ -329,7 +307,6 @@ body.about-me {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Pseudo-element for custom bullets */
 #work_history li:before {
     content: "• ";
     color: #4a86e8;
@@ -367,14 +344,14 @@ body.about-me {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Main Content Paragraph Styles */
+/* -------------- Main Content Styles -------------- */
 main p {
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Container for screenshots with a more dynamic and responsive grid */
+/* -------------- Screenshot Container Styles -------------- */
 .screenshot_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -389,7 +366,6 @@ main p {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Style adjustments for individual screenshots */
 .screenshot {
     background-color: transparent;
     padding: 10px;
@@ -407,7 +383,7 @@ main p {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Back to Top button styles */
+/* -------------- Back to Top Button Styles -------------- */
 .back_to_top {
     display: block;
     width: auto;
@@ -423,16 +399,15 @@ main p {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Hover effect for 'Back to Top' button */
 .back_to_top:hover {
     background-color: #6a9fe8;
 }
 
-/* Active state for 'Back to Top' button */
 .back_to_top:active {
     background-color: #2f5cb3;
 }
 
+/* -------------- Footer Styles -------------- */
 footer {
     text-align: center;
     padding: .1px 20px;
@@ -443,12 +418,15 @@ footer {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Adjustments for responsive design */
+/* -------------- Responsive Design Adjustments -------------- */
 @media screen and (max-width: 768px) {
+
     #work_history>div,
     .project {
-        width: calc(100% - 40px); /* Adjust width to fill the entire container */
-        font-family: 'Helvetica', Arial, sans-serif; /* Apply font family */
+        width: calc(100% - 40px);
+        /* Adjust width to fill the entire container */
+        font-family: 'Helvetica', Arial, sans-serif;
+        /* Apply font family */
     }
 }
 
@@ -516,74 +494,73 @@ footer {
     }
 }
 
-/* Responsive Adjustments for Employer Images */
 @media screen and (max-width: 768px) {
-    .small_logo {
-        max-width: 150px;
-        font-family: 'Helvetica', Arial, sans-serif;
-    }
-}
 
-@media screen and (max-width: 480px) {
-    .small_logo {
-        max-width: 100px;
-        font-family: 'Helvetica', Arial, sans-serif;
-    }
-}
-
-/* Hide Employer Images on Small Screens */
-@media screen and (max-width: 1600px) {
-    .small_logo {
-        display: none;
-        font-family: 'Helvetica', Arial, sans-serif;
-    }
-}
-
-/* Adjust grid for larger screens */
-@media screen and (min-width: 768px) {
-    .screenshot_container {
-        grid-template-columns: repeat(2, 1fr);
-        font-family: 'Helvetica', Arial, sans-serif;
-    }
-}
-
-/* Adjust grid for smaller screens */
-@media screen and (max-width: 600px) {
-    .screenshot_container {
-        grid-template-columns: repeat(1, 1fr);
-        font-family: 'Helvetica', Arial, sans-serif;
-    }
-}
-@media screen and (max-width: 768px) {
     .featured,
     .testimonials {
-        margin: 20px; /* Adjust the side margins or set to 0 if needed */
-        padding: 20px; /* Add padding for spacing within the container */
-        box-sizing: border-box; /* Include padding in the width calculation */
+        margin: 20px auto;
+        /* Adjust margins for smaller screens */
+        width: auto;
+        /* Set width to auto or a specific percentage */
+        padding: 20px;
+        /* Add padding for spacing within the container */
+        box-sizing: border-box;
+        /* Include padding in the width calculation */
     }
 }
 
 @media (max-width: 480px) {
     .projects_container {
-        display: block; /* Switch to block if flex is causing issues */
-        height: auto; /* Remove the 100vh to allow content to determine height */
-        padding: 20px 0; /* Adjust padding to ensure content fits */
+        display: block;
+        /* Switch to block if flex is causing issues */
+        height: auto;
+        /* Remove the 100vh to allow content to determine height */
+        padding: 20px 0;
+        /* Adjust padding to ensure content fits */
     }
 
     .project,
     .testimonial {
-        /* Ensure these elements do not have fixed width or height that could cause overflow */
-        margin-bottom: 20px; /* Add space between items */
+        margin-bottom: 20px;
+        /* Add space between items */
     }
 
     .profile-pic {
-        width: 80px; /* Adjust profile image size if necessary */
+        width: 80px;
+        /* Adjust profile image size if necessary */
     }
 }
 
-/* You might also want to ensure the images scale properly */
-img {
-    max-width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .featured,
+    .testimonials {
+        margin: 10px 5%;
+        /* Adjust margins for better spacing */
+        width: 90%;
+        /* Set a relative width */
+        box-sizing: border-box;
+        /* Include padding and borders in the element's total width and height */
+    }
+
+    .featured h2,
+    .testimonials h2 {
+        font-size: 1.5rem;
+        /* Adjust font size */
+    }
+
+    .featured .projects_container,
+    .testimonials .testimonial {
+        padding: 10px;
+        /* Add padding inside containers */
+        box-sizing: border-box;
+    }
 }
 
+/* Ensuring images scale properly */
+img {
+    max-width: 100%;
+    /* Make images responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+}

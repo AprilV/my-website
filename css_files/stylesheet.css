@@ -80,9 +80,9 @@ nav#nav_menu ul li a.active {
     margin: 0.5em 0;
     font-size: 3em;
     color: #32a9e2;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
     font-weight: bold;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: 'Abhaya Libre', serif;
 }
 
 .hero_content p {
@@ -136,7 +136,7 @@ nav#nav_menu ul li a.active {
 .testimonial {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #ffffff1a;
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     display: inline-block;
     width: 80%;
@@ -175,7 +175,7 @@ nav#nav_menu ul li a.active {
 
 .project:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
@@ -229,11 +229,11 @@ body.about-me {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     max-width: 80%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -291,7 +291,7 @@ body.about-me {
     padding: 20px;
     margin: 20px 0;
     text-align: center;
-    background-color: #00000099;
+    background-color: rgba(0, 0, 0, 0.4);
     color: #f0f0f0;
     font-family: 'Helvetica', Arial, sans-serif;
 }
@@ -300,7 +300,7 @@ body.about-me {
     width: 100%;
     border-radius: 10px;
     margin: 20px 0;
-    background-color: hsla(0, 0%, 0%, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     box-sizing: border-box;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -361,7 +361,7 @@ body.about-me {
     justify-content: space-evenly;
     align-items: center;
     margin: 20px 0;
-    background-color: #00000099;
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     border-radius: 10px;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -381,8 +381,8 @@ main p {
     gap: 20px;
     padding: 20px;
     max-width: 90%;
-    background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     overflow: hidden;
     margin: 0 auto;
@@ -437,7 +437,7 @@ footer {
     text-align: center;
     padding: .1px 20px;
     color: #ccc;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     clear: both;
     border-radius: 10px;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -449,14 +449,9 @@ footer {
     #work_history>div,
     .project {
         width: calc(100% - 40px);
+        /* Adjust width to fill the entire container */
         font-family: 'Helvetica', Arial, sans-serif;
-    }
-}
-
-@media (max-width: 768px) {
-    .project {
-        width: calc(100% - 40px);
-        font-family: 'Helvetica', Arial, sans-serif;
+        /* Apply font family */
     }
 }
 
@@ -524,41 +519,129 @@ footer {
     }
 }
 
-/* Responsive Adjustments for Employer Images */
+/* Adjustments for responsive design */
+@media screen and (max-width: 768px) {
+
+    #work_history>div,
+    .project {
+        width: calc(100% - 40px);
+        /* Adjust width to fill the entire container */
+        font-family: 'Helvetica', Arial, sans-serif;
+        /* Apply font family */
+    }
+
+    /* Newly added styles for the featured and testimonials sections */
+    .featured,
+    .testimonials {
+        margin: 20px auto;
+        /* Adjust margins for smaller screens */
+        width: auto;
+        /* Set width to auto or a specific percentage */
+        padding: 20px;
+        /* Add padding for spacing within the container */
+        box-sizing: border-box;
+        /* Include padding in the width calculation */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-family: 'Helvetica', Arial, sans-serif;
+    }
+
+    nav#nav_menu ul {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-family: 'Helvetica', Arial, sans-serif;
+    }
+
+    nav#nav_menu ul li a {
+        padding: 5px 10px;
+        font-size: 0.8em;
+        font-family: 'Helvetica', Arial, sans-serif;
+    }
+
+    .hero {
+        padding: 50px 10px;
+        font-family: 'Helvetica', Arial, sans-serif;
+    }
+
+    .hero_content h1 {
+        font-size: 1.5em;
+        font-family: 'Helvetica', Arial, sans-serif;
+    }
+
+    .hero_content p,
+    .learn_more {
+        font-size: 1em;
+        font-family: 'Helvetica', Arial, sans-serif;
+    }
+
+    .projects_container,
+    .project,
+    .testimonial {
+        width: 100%;
+        font-family: 'Helvetica', Arial, sans-serif;
+    }
+
+    .projects_container {
+        display: block;
+        /* Changed from flex to block for better control */
+        height: auto;
+        /* Changed from 100vh to auto */
+        padding: 20px 0;
+        /* Adjust padding to ensure content fits */
+    }
+
+    .project {
+        max-width: 500px;
+        margin: 0 auto;
+        font-family: 'Helvetica', Arial, sans-serif;
+    }
+
+    .profile-pic {
+        width: 80px;
+        /* Adjust profile image size if necessary */
+        font-family: 'Helvetica', Arial, sans-serif;
+    }
+
+    .small_logo {
+        max-width: 100px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .small_logo {
         max-width: 150px;
-        font-family: 'Helvetica', Arial, sans-serif;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .small_logo {
-        max-width: 100px;
-        font-family: 'Helvetica', Arial, sans-serif;
-    }
-}
-
-/* Hide Employer Images on Small Screens */
 @media screen and (max-width: 1600px) {
     .small_logo {
         display: none;
-        font-family: 'Helvetica', Arial, sans-serif;
     }
 }
 
-/* Adjust grid for larger screens */
 @media screen and (min-width: 768px) {
     .screenshot_container {
         grid-template-columns: repeat(2, 1fr);
-        font-family: 'Helvetica', Arial, sans-serif;
     }
 }
 
-/* Adjust grid for smaller screens */
 @media screen and (max-width: 600px) {
     .screenshot_container {
         grid-template-columns: repeat(1, 1fr);
-        font-family: 'Helvetica', Arial, sans-serif;
     }
+}
+
+/* Ensuring images scale properly */
+img {
+    max-width: 100%;
+    /* Make images responsive */
+    height: auto;
+    /* Maintain aspect ratio */
 }
