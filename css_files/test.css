@@ -217,6 +217,22 @@ body.about-me {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
+/* Quote Styles */
+#quote {
+    text-align: center;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+#quote q {
+    font-style: italic;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #4a86e8;
+    padding-top: 10px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* -------------- LinkedIn Styles -------------- */
 #linkedin {
     text-align: center;
@@ -419,22 +435,39 @@ footer {
 }
 
 /* -------------- Responsive Design Adjustments -------------- */
+@media screen and (max-width: 1620px) {
+
+    /* Hide employer images on medium screens */
+    .small_logo {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     #work_history>div,
     .project {
         width: calc(100% - 40px);
         /* Adjust width to fill the entire container */
-        font-family: 'Helvetica', Arial, sans-serif;
-        /* Apply font family */
     }
+
+    /* No need to repeat .small_logo style here since it's covered by the 1024px media query */
 }
+
+@media (max-width: 480px) {
+    /* ... other styles ... */
+    /* No need to repeat .small_logo style here since it's covered by the 1024px media query */
+}
+
+
+/* ... other media queries and styles ... */
+
+
 
 @media (max-width: 480px) {
     body {
         margin-left: 5px;
         margin-right: 5px;
-        font-family: 'Helvetica', Arial, sans-serif;
     }
 
     nav#nav_menu ul {
@@ -442,36 +475,30 @@ footer {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        font-family: 'Helvetica', Arial, sans-serif;
     }
 
     nav#nav_menu ul li a {
         padding: 5px 10px;
         font-size: 0.8em;
-        font-family: 'Helvetica', Arial, sans-serif;
     }
 
     .hero {
         padding: 50px 10px;
-        font-family: 'Helvetica', Arial, sans-serif;
     }
 
     .hero_content h1 {
         font-size: 1.5em;
-        font-family: 'Helvetica', Arial, sans-serif;
     }
 
     .hero_content p,
     .learn_more {
         font-size: 1em;
-        font-family: 'Helvetica', Arial, sans-serif;
     }
 
     .projects_container,
     .project,
     .testimonial {
         width: 100%;
-        font-family: 'Helvetica', Arial, sans-serif;
     }
 
     .projects_container {
@@ -479,18 +506,20 @@ footer {
         justify-content: center;
         align-items: center;
         height: 100vh;
-        font-family: 'Helvetica', Arial, sans-serif;
     }
 
     .project {
         max-width: 500px;
         margin: 0 auto;
-        font-family: 'Helvetica', Arial, sans-serif;
     }
 
     .profile-pic {
         width: 100px;
-        font-family: 'Helvetica', Arial, sans-serif;
+    }
+
+    .small_logo {
+        display: none;
+        /* Hide employer images on very small screens */
     }
 }
 
@@ -553,7 +582,6 @@ footer {
     .testimonials .testimonial {
         padding: 10px;
         /* Add padding inside containers */
-        box-sizing: border-box;
     }
 }
 
