@@ -370,10 +370,10 @@ main p {
 /* -------------- Screenshot Container Styles -------------- */
 .screenshot_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
-    max-width: 100%; 
+    max-width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
@@ -392,7 +392,7 @@ main p {
 }
 
 .screenshot img {
-    width: 130%; 
+    width: 130%;
     max-width: 130%;
     height: auto;
     border-radius: 10px;
@@ -518,12 +518,13 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
     .featured,
     .testimonials {
-        width: 90%; /* Adjusted width */
-        margin: 20px auto; /* Adjusted margin */
-        padding: 20px; /* Retaining padding */
-        box-sizing: border-box; /* Retaining box-sizing property */
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
     }
 }
 
@@ -537,12 +538,10 @@ footer {
     .project,
     .testimonial {
         margin-bottom: 20px;
-
     }
 
     .profile-pic {
         width: 80px;
-
     }
 }
 
@@ -553,21 +552,19 @@ footer {
         margin: 10px 5%;
         width: 90%;
         box-sizing: border-box;
-
     }
 
     .featured h2,
     .testimonials h2 {
         font-size: 1.5rem;
-
     }
 
     .featured .projects_container,
     .testimonials .testimonial {
         padding: 10px;
-
     }
 }
+
 
 /* Ensuring images are responsive */
 img {
