@@ -444,7 +444,7 @@ footer {
 /* -------------- Responsive Design Adjustments -------------- */
 @media screen and (max-width: 1620px) {
 
-    /* Hide employer images on medium screens */
+    /* Hide employer images on small and medium screens*/
     .small_logo {
         display: none;
     }
@@ -517,7 +517,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
 
     .featured,
     .testimonials {
@@ -564,7 +564,6 @@ footer {
         padding: 10px;
     }
 }
-
 
 /* Ensuring images are responsive */
 img {
