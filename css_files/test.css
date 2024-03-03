@@ -370,10 +370,10 @@ main p {
 /* -------------- Screenshot Container Styles -------------- */
 .screenshot_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust grid columns as needed */
     gap: 20px;
     padding: 20px;
-    max-width: 90%;
+    max-width: 100%; /* Increase max-width to allow larger images */
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
@@ -381,6 +381,7 @@ main p {
     margin: 0 auto;
     font-family: 'Helvetica', Arial, sans-serif;
 }
+
 
 .screenshot {
     background-color: transparent;
@@ -392,10 +393,17 @@ main p {
 }
 
 .screenshot img {
-    width: 100%;
+    width: 130%; /* Adjust this value as needed */
+    max-width: 130%;
     height: auto;
     border-radius: 10px;
     transition: transform 0.5s ease, opacity 0.5s ease;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.screenshot img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
@@ -448,17 +456,11 @@ footer {
     #work_history>div,
     .project {
         width: calc(100% - 40px);
-        /* Adjust width to fill the entire container */
+
     }
-
-    /* No need to repeat .small_logo style here since it's covered by the 1024px media query */
 }
 
-@media (max-width: 480px) {
-    /* ... other styles ... */
-    /* No need to repeat .small_logo style here since it's covered by the 1024px media query */
-}
-
+@media (max-width: 480px) {}
 
 /* ... other media queries and styles ... */
 
@@ -519,7 +521,6 @@ footer {
 
     .small_logo {
         display: none;
-        /* Hide employer images on very small screens */
     }
 }
 
@@ -528,35 +529,29 @@ footer {
     .featured,
     .testimonials {
         margin: 20px auto;
-        /* Adjust margins for smaller screens */
         width: auto;
-        /* Set width to auto or a specific percentage */
         padding: 20px;
-        /* Add padding for spacing within the container */
         box-sizing: border-box;
-        /* Include padding in the width calculation */
+
     }
 }
 
 @media (max-width: 480px) {
     .projects_container {
         display: block;
-        /* Switch to block if flex is causing issues */
         height: auto;
-        /* Remove the 100vh to allow content to determine height */
         padding: 20px 0;
-        /* Adjust padding to ensure content fits */
     }
 
     .project,
     .testimonial {
         margin-bottom: 20px;
-        /* Add space between items */
+
     }
 
     .profile-pic {
         width: 80px;
-        /* Adjust profile image size if necessary */
+
     }
 }
 
@@ -565,30 +560,27 @@ footer {
     .featured,
     .testimonials {
         margin: 10px 5%;
-        /* Adjust margins for better spacing */
         width: 90%;
-        /* Set a relative width */
         box-sizing: border-box;
-        /* Include padding and borders in the element's total width and height */
+
     }
 
     .featured h2,
     .testimonials h2 {
         font-size: 1.5rem;
-        /* Adjust font size */
+
     }
 
     .featured .projects_container,
     .testimonials .testimonial {
         padding: 10px;
-        /* Add padding inside containers */
+
     }
 }
 
-/* Ensuring images scale properly */
+/* Ensuring images are responsive */
 img {
     max-width: 100%;
-    /* Make images responsive */
     height: auto;
-    /* Maintain aspect ratio */
+
 }
