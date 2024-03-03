@@ -217,7 +217,7 @@ body.about-me {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Quote Styles */
+/* -------------- Quote Styles --------------- */
 #quote {
     text-align: center;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -370,10 +370,10 @@ main p {
 /* -------------- Screenshot Container Styles -------------- */
 .screenshot_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust grid columns as needed */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 20px;
     padding: 20px;
-    max-width: 100%; /* Increase max-width to allow larger images */
+    max-width: 100%; 
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
@@ -381,7 +381,6 @@ main p {
     margin: 0 auto;
     font-family: 'Helvetica', Arial, sans-serif;
 }
-
 
 .screenshot {
     background-color: transparent;
@@ -393,7 +392,7 @@ main p {
 }
 
 .screenshot img {
-    width: 130%; /* Adjust this value as needed */
+    width: 130%; 
     max-width: 130%;
     height: auto;
     border-radius: 10px;
@@ -460,12 +459,6 @@ footer {
     }
 }
 
-@media (max-width: 480px) {}
-
-/* ... other media queries and styles ... */
-
-
-
 @media (max-width: 480px) {
     body {
         margin-left: 5px;
@@ -525,14 +518,12 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
     .featured,
     .testimonials {
-        margin: 20px auto;
-        width: auto;
-        padding: 20px;
-        box-sizing: border-box;
-
+        width: 90%; /* Adjusted width */
+        margin: 20px auto; /* Adjusted margin */
+        padding: 20px; /* Retaining padding */
+        box-sizing: border-box; /* Retaining box-sizing property */
     }
 }
 
