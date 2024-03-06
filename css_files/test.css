@@ -1,5 +1,7 @@
 /* -------------- Global Styles -------------- */
+
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -8,6 +10,13 @@ body {
     font-family: 'Helvetica', Arial, sans-serif;
     background-image: url('../Images/tech_images/tech8.jpg');
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 /* -------------- Navigation Menu Styles -------------- */
@@ -440,6 +449,7 @@ footer {
     padding: .1px 20px;
     color: #cdcdcd;
     background: rgba(77, 84, 89, 0.0);
+    /* Adjusted the opacity to make it slightly visible */
     clear: both;
     border-radius: 10px;
     font-family: 'Helvetica', Arial, sans-serif;
