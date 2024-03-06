@@ -4,7 +4,7 @@ body {
     margin-right: 15px;
     background-size: cover;
     background-position: center;
-    color: #f0f0f0;
+    color: #cdcdcd;
     font-family: 'Helvetica', Arial, sans-serif;
     background-image: url('../Images/tech_images/tech8.jpg');
 }
@@ -33,7 +33,7 @@ nav#nav_menu ul li {
 }
 
 nav#nav_menu ul li a {
-    color: #ffffff;
+    color: #cdcdcd;
     padding: 5px 20px;
     text-decoration: none;
     display: inline-block;
@@ -75,7 +75,7 @@ nav#nav_menu ul li a.active {
 .learn_more {
     display: inline-block;
     background-color: #0056b3;
-    color: #ffffff;
+    color: #cdcdcd;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -97,8 +97,8 @@ nav#nav_menu ul li a.active {
 .testimonials {
     padding: 20px;
     text-align: center;
-    color: #f0f0f0;
-    background: hsla(0, 0%, 0%, 0.5);
+    color: #cdcdcd;
+    background: rgba(77, 84, 89, 0.4);
     margin: 20px 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px #00000033;
@@ -107,7 +107,7 @@ nav#nav_menu ul li a.active {
 
 .testimonials h2,
 .featured h2 {
-    color: #ffffff;
+    color: #cdcdcd;
     margin-bottom: 30px;
     font-family: 'Helvetica', Arial, sans-serif;
 }
@@ -126,14 +126,14 @@ nav#nav_menu ul li a.active {
 .testimonial q {
     font-style: italic;
     display: block;
-    color: #ffffff;
+    color: #cdcdcd;
     margin: 10px 0;
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
 .testimonial p {
     font-size: 0.9em;
-    color: #cccccc;
+    color: #cdcdcd;
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
@@ -206,8 +206,8 @@ body.about-me {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #ffffff;
+    background: rgba(77, 84, 89, 0.4);
+    color: #cdcdcd;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -217,7 +217,7 @@ body.about-me {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Quote Styles */
+/* -------------- Quote Styles --------------- */
 #quote {
     text-align: center;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -236,7 +236,9 @@ body.about-me {
 /* -------------- LinkedIn Styles -------------- */
 #linkedin {
     text-align: center;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: 'Helvetica',
+
+        Arial, sans-serif;
 }
 
 #linkedin a:visited {
@@ -270,7 +272,7 @@ body.about-me {
 /* -------------- Work History Section Styles -------------- */
 #work_history_title {
     text-align: center;
-    color: #4a86e8;
+    color: #cdcdcd;
     background-color: transparent;
     font-family: 'Helvetica', Arial, sans-serif;
 }
@@ -281,12 +283,10 @@ body.about-me {
     align-items: center;
     border-radius: 10px;
     justify-content: center;
-    border: 2px solid #4a86e8;
     padding: 20px;
     margin: 20px 0;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #f0f0f0;
+    color: #cdcdcd;
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
@@ -294,7 +294,7 @@ body.about-me {
     width: 100%;
     border-radius: 10px;
     margin: 20px 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background: rgba(77, 84, 89, 0.4);
     padding: 20px;
     box-sizing: border-box;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -370,11 +370,11 @@ main p {
 /* -------------- Screenshot Container Styles -------------- */
 .screenshot_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
-    max-width: 90%;
-    background-color: rgba(0, 0, 0, 0.4);
+    max-width: 100%;
+    background: rgba(77, 84, 89, 0.4);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     overflow: hidden;
@@ -392,10 +392,17 @@ main p {
 }
 
 .screenshot img {
-    width: 100%;
+    width: 130%;
+    max-width: 130%;
     height: auto;
     border-radius: 10px;
     transition: transform 0.5s ease, opacity 0.5s ease;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.screenshot img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
@@ -405,7 +412,7 @@ main p {
     width: auto;
     max-width: 100px;
     background-color: #4a86e8;
-    color: #ffffff;
+    color: #cdcdcd;
     padding: 10px 20px;
     border-radius: 15px;
     text-decoration: none;
@@ -427,8 +434,8 @@ main p {
 footer {
     text-align: center;
     padding: .1px 20px;
-    color: #ccc;
-    background-color: rgba(0, 0, 0, 0.4);
+    color: #cdcdcd;
+    background: rgba(77, 84, 89, 0.0);
     clear: both;
     border-radius: 10px;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -436,8 +443,6 @@ footer {
 
 /* -------------- Responsive Design Adjustments -------------- */
 @media screen and (max-width: 1620px) {
-
-    /* Hide employer images on medium screens */
     .small_logo {
         display: none;
     }
@@ -448,15 +453,8 @@ footer {
     #work_history>div,
     .project {
         width: calc(100% - 40px);
-
     }
 }
-
-@media (max-width: 480px) {}
-
-/* ... other media queries and styles ... */
-
-
 
 @media (max-width: 480px) {
     body {
@@ -516,37 +514,6 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px) {
-
-    .featured,
-    .testimonials {
-        margin: 20px auto;
-        width: auto;
-        padding: 20px;
-        box-sizing: border-box;
-
-    }
-}
-
-@media (max-width: 480px) {
-    .projects_container {
-        display: block;
-        height: auto;
-        padding: 20px 0;
-    }
-
-    .project,
-    .testimonial {
-        margin-bottom: 20px;
-
-    }
-
-    .profile-pic {
-        width: 80px;
-
-    }
-}
-
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
     .featured,
@@ -554,19 +521,16 @@ footer {
         margin: 10px 5%;
         width: 90%;
         box-sizing: border-box;
-
     }
 
     .featured h2,
     .testimonials h2 {
         font-size: 1.5rem;
-
     }
 
     .featured .projects_container,
     .testimonials .testimonial {
         padding: 10px;
-
     }
 }
 
@@ -574,5 +538,4 @@ footer {
 img {
     max-width: 100%;
     height: auto;
-
 }
