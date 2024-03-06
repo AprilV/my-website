@@ -1,26 +1,27 @@
 /* -------------- Global Styles -------------- */
 body {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0;
+    padding: 0;
     background-size: cover;
     background-position: center;
     color: #cdcdcd;
     font-family: 'Helvetica', Arial, sans-serif;
     background-image: url('../Images/tech_images/tech8.jpg');
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
 }
+
 
 /* -------------- Navigation Menu Styles -------------- */
 nav#nav_menu {
     text-align: center;
-    width: 100%;
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
 nav#nav_menu ul {
     list-style-type: none;
-    padding: 5px;
-    display: inline-block;
-    background-color: rgba(51, 51, 51, 0.1);
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.0);
     border-radius: 25px;
     margin: 0 auto;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -50,11 +51,12 @@ nav#nav_menu ul li a.active {
     background-color: #2f5cb3;
 }
 
+
 /* -------------- Hero Section Styles -------------- */
 .hero {
     color: #cdcdcd;
     text-align: center;
-    padding: 100px 20px;
+    padding: 15px 20px;
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
@@ -95,29 +97,29 @@ nav#nav_menu ul li a.active {
 /* -------------- Featured Projects and Testimonials Styles -------------- */
 .featured,
 .testimonials {
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     color: #cdcdcd;
     background: rgba(77, 84, 89, 0.4);
-    margin: 20px 300px;
+    margin: 15px auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px #00000033;
     font-family: 'Helvetica', Arial, sans-serif;
+    max-width: 800px;
 }
 
-.testimonials h2,
-.featured h2 {
+.featured h2,
+.testimonials h2 {
     color: #cdcdcd;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
 .testimonial {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    display: inline-block;
     width: 80%;
     box-shadow: 0 4px 8px #00000033;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -148,14 +150,19 @@ nav#nav_menu ul li a.active {
 }
 
 .project {
-    margin: auto;
-    font-family: 'Helvetica', Arial, sans-serif;
+    text-decoration: none;
+    color: #cdcdcd;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(77, 84, 89, 0.4);
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    text-decoration: underline;
 }
 
 .project:hover {
-    transform: translateY(-10px);
-    background-color: rgba(0, 0, 0, 0.4);
-    font-family: 'Helvetica', Arial, sans-serif;
+    background-color: rgba(77, 84, 89, 0.6);
 }
 
 /* -------------- Profile Picture Styles -------------- */
