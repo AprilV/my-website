@@ -8,9 +8,7 @@ body {
     font-family: 'Helvetica', Arial, sans-serif;
     background-image: url('../Images/tech_images/tech8.jpg');
     overflow-x: hidden;
-    /* Prevent horizontal scrolling */
 }
-
 
 /* -------------- Navigation Menu Styles -------------- */
 nav#nav_menu {
@@ -48,9 +46,8 @@ nav#nav_menu ul li a:hover {
 }
 
 nav#nav_menu ul li a.active {
-    background-color: #2f5cb3;
+    background-color: #0066ff;
 }
-
 
 /* -------------- Hero Section Styles -------------- */
 .hero {
@@ -76,7 +73,7 @@ nav#nav_menu ul li a.active {
 
 .learn_more {
     display: inline-block;
-    background-color: #0056b3;
+    background-color: #0066ff;
     color: #cdcdcd;
     padding: 10px 20px;
     text-decoration: none;
@@ -201,8 +198,8 @@ body.about-me {
     text-align: center;
     font-size: x-large;
     font-family: 'Helvetica', Arial, sans-serif;
-    color: #4a86e8;
-    border-bottom: 2px solid #4a86e8;
+    color: #0066ff;
+    border-bottom: 2px solid #0066ff;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -233,19 +230,19 @@ body.about-me {
 #quote q {
     font-style: italic;
     font-family: 'Helvetica', Arial, sans-serif;
-    color: #4a86e8;
+    color: #0066ff;
     padding-top: 10px;
     display: inline-block;
     margin-left: auto;
+
+
     margin-right: auto;
 }
 
 /* -------------- LinkedIn Styles -------------- */
 #linkedin {
     text-align: center;
-    font-family: 'Helvetica',
-
-        Arial, sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif;
 }
 
 #linkedin a:visited {
@@ -309,7 +306,7 @@ body.about-me {
 
 #work_history h2,
 #employers_images h4 {
-    color: #4a86e8;
+    color: #0066ff;
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
@@ -418,7 +415,7 @@ main p {
     display: block;
     width: auto;
     max-width: 100px;
-    background-color: #4a86e8;
+    background-color: #0066ff;
     color: #cdcdcd;
     padding: 10px 20px;
     border-radius: 15px;
