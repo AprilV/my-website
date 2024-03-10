@@ -1,19 +1,50 @@
-/* -------------- Global Styles -------------- */
+/*----------- Main and Global Styles ----------*/
+
+:root {
+    --background-color: #cdcdcd;
+    --font-family-default: 'Helvetica', Arial, sans-serif;
+    --font-family-heading: 'Abhaya Libre', serif;
+    --background-image-url: url('../Images/tech_images/tech8.jpg');
+    --hover-background-color: #6a9fe8;
+    --active-background-color: #0066ff;
+    --box-shadow-color: rgba(0, 0, 0, 0.33);
+    --border-color: #0056b3;
+    --visited-link-color: #dda0dd;
+    --background-color-dark: rgba(77, 84, 89, 0.7);
+    --background-color-light: rgba(0, 0, 0, 0.4);
+    --text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    --text-color: #cdcdcd;
+    --max-content-width: 800px;
+}
+
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     background-size: cover;
     background-position: center;
-    color: #cdcdcd;
-    font-family: 'Helvetica', Arial, sans-serif;
-    background-image: url('../Images/tech_images/tech8.jpg');
+    color: var(--background-color);
+    font-family: var(--font-family-default);
+    background-image: var(--background-image-url);
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* -------------- Navigation Menu Styles -------------- */
+
 nav#nav_menu {
     text-align: center;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 nav#nav_menu ul {
@@ -22,69 +53,69 @@ nav#nav_menu ul {
     background-color: rgba(51, 51, 51, 0.0);
     border-radius: 25px;
     margin: 0 auto;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 nav#nav_menu ul li {
     display: inline;
     margin: 0;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 nav#nav_menu ul li a {
-    color: #cdcdcd;
+    color: var(--text-color);
     padding: 5px 20px;
     text-decoration: none;
     display: inline-block;
     border-radius: 15px;
     margin: 0 2px;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 nav#nav_menu ul li a:hover {
-    background-color: #6a9fe8;
+    background-color: var(--hover-background-color);
 }
 
 nav#nav_menu ul li a.active {
-    background-color: #0066ff;
+    background-color: var(--active-background-color);
 }
 
 /* -------------- Hero Section Styles -------------- */
+
 .hero {
-    color: #cdcdcd;
+    color: var(--text-color);
     text-align: center;
     padding: 15px 20px;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 .hero_content h1 {
-    margin: 0.5em 0;
+    color: var(--active-background-color);
+    /* Name Gold for prominence */
+    text-shadow: var(--text-shadow);
+    font-family: var(--font-family-heading);
     font-size: 3em;
-    color: #32a9e2;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-    font-weight: bold;
-    font-family: 'Abhaya Libre', serif;
 }
 
 .hero_content p {
     font-size: 1.2em;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 .learn_more {
     display: inline-block;
-    background-color: #0066ff;
-    color: #cdcdcd;
+    background-color: var(--active-background-color);
+    color: var(--text-color);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
     transition: background-color 0.3s ease;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 .learn_more:hover {
-    background-color: #6a9fe8;
+    background-color: var(--hover-background-color);
 }
 
 .learn_more:active {
@@ -92,48 +123,49 @@ nav#nav_menu ul li a.active {
 }
 
 /* -------------- Featured Projects and Testimonials Styles -------------- */
+
 .featured,
 .testimonials {
     padding: 15px;
     text-align: center;
-    color: #cdcdcd;
-    background: rgba(77, 84, 89, 0.4);
+    color: var(--text-color);
+    background: var(--background-color-dark);
     margin: 15px auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px #00000033;
-    font-family: 'Helvetica', Arial, sans-serif;
-    max-width: 800px;
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+    font-family: var(--font-family-default);
+    max-width: var(--max-content-width);
 }
 
 .featured h2,
 .testimonials h2 {
-    color: #cdcdcd;
+    color: var(--text-color);
     margin-bottom: 15px;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 .testimonial {
     margin-bottom: 15px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--background-color-light);
     border-radius: 10px;
     width: 80%;
-    box-shadow: 0 4px 8px #00000033;
-    font-family: 'Helvetica', Arial, sans-serif;
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+    font-family: var(--font-family-default);
 }
 
 .testimonial q {
     font-style: italic;
     display: block;
-    color: #cdcdcd;
+    color: var(--text-color);
     margin: 10px 0;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 .testimonial p {
     font-size: 0.9em;
-    color: #cdcdcd;
-    font-family: 'Helvetica', Arial, sans-serif;
+    color: var(--text-color);
+    font-family: var(--font-family-default);
 }
 
 .projects_container {
@@ -143,36 +175,42 @@ nav#nav_menu ul li a.active {
     flex-direction: column;
     height: auto;
     margin: 0 auto;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 .project {
-    text-decoration: none;
-    color: #cdcdcd;
+    text-decoration: underline;
+    color: var(--text-color);
     font-size: 1.2em;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: rgba(77, 84, 89, 0.4);
+    --background-color-dark: var(--background-color-dark);
     transition: background-color 0.3s ease;
     border-radius: 10px;
-    text-decoration: underline;
 }
 
 .project:hover {
-    background-color: rgba(77, 84, 89, 0.6);
+    background-color: var(--hover-background-color);
+    color: #ffffff;
+}
+
+.project:visited {
+    color: var(--visited-link-color);
 }
 
 /* -------------- Profile Picture Styles -------------- */
+
 .profile-pic {
     width: 150px;
     height: auto;
     border-radius: 50%;
-    border: 3px solid #0056b3;
+    border: 3px solid var(--border-color);
     margin-bottom: 20px;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 /* -------------- Font Awesome Icons Styles -------------- */
+
 .fa-server:before,
 .fa-computer-mouse:before {
     font-family: "Font Awesome 5 Free";
@@ -180,9 +218,10 @@ nav#nav_menu ul li a.active {
 }
 
 /* -------------- About Me Section Styles -------------- */
+
 body.about-me {
     text-align: center;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 .about-me-header {
@@ -191,71 +230,72 @@ body.about-me {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 #about_me_title {
     text-align: center;
     font-size: x-large;
-    font-family: 'Helvetica', Arial, sans-serif;
-    color: #0066ff;
-    border-bottom: 2px solid #0066ff;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--active-background-color);
     padding-bottom: 10px;
     margin-bottom: 20px;
+    font-family: var(--font-family-default);
 }
 
 #about_me {
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: rgba(77, 84, 89, 0.4);
-    color: #cdcdcd;
-    padding: 20px;
+
+
+    align-items: flex-start;
+    background: var(--background-color-dark);
+    color: #E0E0E0;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     max-width: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: 'Helvetica', Arial, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: var(--font-family-default);
 }
 
 /* -------------- Quote Styles --------------- */
+
 #quote {
     text-align: center;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 #quote q {
     font-style: italic;
-    font-family: 'Helvetica', Arial, sans-serif;
-    color: #0066ff;
+    color: var(--active-background-color);
     padding-top: 10px;
     display: inline-block;
     margin-left: auto;
-
-
     margin-right: auto;
 }
 
 /* -------------- LinkedIn Styles -------------- */
+
 #linkedin {
     text-align: center;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 #linkedin a:visited {
-    color: #dda0dd;
+    color: var(--visited-link-color);
     text-decoration: none;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 #linkedin a:hover {
     font-size: 150%;
     color: #add8e6;
     text-decoration: none;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 .linkedin-logo {
@@ -263,93 +303,92 @@ body.about-me {
     height: auto;
     vertical-align: middle;
     text-decoration: none;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 #linkedin a {
     text-decoration: none;
     color: #add8e6;
     font-weight: bold;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 /* -------------- Work History Section Styles -------------- */
+
 #work_history_title {
     text-align: center;
-    color: #cdcdcd;
+    color: var(--text-color);
     background-color: transparent;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 #work_history {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: start;
     padding: 20px;
     margin: 20px 0;
-    text-align: center;
-    color: #cdcdcd;
-    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.work_history_item {
+    background: var(--background-color-dark);
+    color: #E0E0E0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 #work_history>div {
-    width: 100%;
-    border-radius: 10px;
-    margin: 20px 0;
-    background: rgba(77, 84, 89, 0.4);
+    background: var(--background-color-dark);
+    color: #E0E0E0;
     padding: 20px;
-    box-sizing: border-box;
-    font-family: 'Helvetica', Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+    position: relative;
 }
 
-#work_history h2,
-#employers_images h4 {
-    color: #0066ff;
-    font-family: 'Helvetica', Arial, sans-serif;
+.work_history_item h2 {
+    color: var(--active-background-color);
+    margin-bottom: 10px;
 }
 
-#work_history ul {
-    padding-left: 0;
-    list-style-type: none;
-    display: inline-block;
-    text-align: left;
-    margin: 0 auto;
-    font-family: 'Helvetica', Arial, sans-serif;
+.work_history_item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.work_history_item p {
+    font-weight: bold;
 }
 
 #work_history li {
-    text-align: left;
-    list-style-type: disc;
-    margin-left: 20px;
-    display: list-item;
-    font-family: 'Helvetica', Arial, sans-serif;
-}
-
-#work_history li:before {
-    content: "• ";
-    color: #4a86e8;
-    font-size: larger;
-    margin-left: -20px;
-    position: absolute;
-    font-family: 'Helvetica', Arial, sans-serif;
-}
-
-#work_history>div {
     position: relative;
-    padding-left: 60px;
-    font-family: 'Helvetica', Arial, sans-serif;
+    padding-left: 20px;
+}
+
+.work_history_item li::before {
+    content: "• ";
+    color: var(--active-background-color);
+    font-size: larger;
+    margin-right: 5px;
+}
+
+#work_history h2,
+#work_history p,
+#work_history ul {
+    text-align: left;
+    margin-left: 80px;
 }
 
 .small_logo {
-    width: 150px;
+    width: 65px;
     height: auto;
     position: absolute;
-    left: 150px;
+    left: 20px;
     top: 50%;
     transform: translateY(-50%);
-    font-family: 'Helvetica', Arial, sans-serif;
 }
 
 #employers_images {
@@ -358,76 +397,94 @@ body.about-me {
     justify-content: space-evenly;
     align-items: center;
     margin: 20px 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background: var(--background-color-dark);
     padding: 20px;
     border-radius: 10px;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 /* -------------- Main Content Styles -------------- */
+
 main p {
     text-align: center;
     margin-bottom: 20px;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 /* -------------- Screenshot Container Styles -------------- */
+
+.screenshot figcaption {
+    margin-bottom: 10px;
+}
+
 .screenshot_container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     gap: 20px;
     padding: 20px;
-    max-width: 100%;
-    background: rgba(77, 84, 89, 0.4);
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--background-color-dark);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    overflow: hidden;
-    margin: 0 auto;
-    font-family: 'Helvetica', Arial, sans-serif;
 }
 
 .screenshot {
     background-color: transparent;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
-    overflow: hidden;
     position: relative;
-    font-family: 'Helvetica', Arial, sans-serif;
+    flex: 1 0 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .screenshot img {
-    width: 130%;
-    max-width: 130%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     transition: transform 0.5s ease, opacity 0.5s ease;
-    font-family: 'Helvetica', Arial, sans-serif;
 }
 
 .screenshot img:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     opacity: 0.8;
-    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.code_explanation {
+    background-color: var(--background-color);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: var(--font-family-default);
+    color: black;
+    width: 80%;
+    box-sizing: border-box;
+    text-align: left;
 }
 
 /* -------------- Back to Top Button Styles -------------- */
+
 .back_to_top {
     display: block;
     width: auto;
     max-width: 100px;
-    background-color: #0066ff;
-    color: #cdcdcd;
+    background-color: var(--active-background-color);
+    color: var(--text-color);
     padding: 10px 20px;
     border-radius: 15px;
     text-decoration: none;
     margin: 20px auto;
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-align: center;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 .back_to_top:hover {
-    background-color: #6a9fe8;
+    background-color: var(--hover-background-color);
 }
 
 .back_to_top:active {
@@ -435,111 +492,27 @@ main p {
 }
 
 /* -------------- Footer Styles -------------- */
+
 footer {
     text-align: center;
     padding: .1px 20px;
-    color: #cdcdcd;
+    color: var(--text-color);
     background: rgba(77, 84, 89, 0.0);
     clear: both;
     border-radius: 10px;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
-/* -------------- Responsive Design Adjustments -------------- */
-@media screen and (max-width: 1620px) {
-    .small_logo {
-        display: none;
-    }
-}
+/* -------------- Media Queries -------------- */
 
 @media screen and (max-width: 768px) {
-
-    #work_history>div,
-    .project {
-        width: calc(100% - 40px);
+    body {
+        font-size: 0.9em;
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     body {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    nav#nav_menu ul {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    nav#nav_menu ul li a {
-        padding: 5px 10px;
         font-size: 0.8em;
     }
-
-    .hero {
-        padding: 50px 10px;
-    }
-
-    .hero_content h1 {
-        font-size: 1.5em;
-    }
-
-    .hero_content p,
-    .learn_more {
-        font-size: 1em;
-    }
-
-    .projects_container,
-    .project,
-    .testimonial {
-        width: 100%;
-    }
-
-    .projects_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .project {
-        max-width: 500px;
-        margin: 0 auto;
-    }
-
-    .profile-pic {
-        width: 100px;
-    }
-
-    .small_logo {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-
-    .featured,
-    .testimonials {
-        margin: 10px 5%;
-        width: 90%;
-        box-sizing: border-box;
-    }
-
-    .featured h2,
-    .testimonials h2 {
-        font-size: 1.5rem;
-    }
-
-    .featured .projects_container,
-    .testimonials .testimonial {
-        padding: 10px;
-    }
-}
-
-/* Ensuring images are responsive */
-img {
-    max-width: 100%;
-    height: auto;
 }
