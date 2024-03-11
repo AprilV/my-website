@@ -189,7 +189,7 @@ nav#nav_menu ul li a.active {
 }
 
 .project:hover {
-    background-color: var(--hover-background-color);
+
     color: #ffffff;
 }
 
