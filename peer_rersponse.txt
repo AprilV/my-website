@@ -1,3 +1,51 @@
+Peer review final mod 9-10.
+Hi April,
+
+Your webpage seems just fine to me, and I do not see any big issues when looking through it. The background fits the style of the page perfectly, 
+and I like the style of the nav bar. One suggestion that I do have would be to change the format of the text on the About Me page, and possibly increase the line height there. 
+	Changed: line height for readability to 1.4 or 140%..
+-Will Davis
+Mar 11 5:34pm
+
+
+Hi April. Your website looks amazing, I like the overall style of it and especially love the background image. 
+It was hard to find anything wrong with your site but one thing I noticed is that the quote 
+"If you're not moving forward, You're moving backwards -AVS" in your about me page was a little hard to see so I would recommend adjusting either the font size, font style, or color. Other then that great work!
+Chage: Made the quote using a lighter blue that is part of my color scheme.
+-Austin Fitzhugh
+
+
+Three things that I see that can maybe help the usability of your website are:
+
+1) In the "About Me" page of your website, I would maybe add a border to your name on the top there, and maybe change the background color within the border to make your name pop out more. 
+This can help with the contrast of this page.
+
+2) I find that the alignment of your "Featured Projects" page is off. Maybe try to center each image and its caption more so as to improve your page's contrast as well.
+
+3) I've noticed that each webpage of your website lacks some repetition. I would think that if the top of each page had the same title as the button that is used to get to that page, 
+it would be more uniform and will help with your website's contrast overall. For one, your "Featured Projects" page should say "Featured Projects" and not "Website Development Screenshots." 
+I think that you should still have "Website Development Screenshots" on the page to introduce your material, but maybe put it under your title which I think should be "Featured Projects."
+
+Change: Changed the title of the page to the appropriate Featured Projects title. I don't see an allignment issue. Pics are diffeent sizes. I'm not sure what you mean by repetiton. Each page is a little diffeernt but the layout, 
+color scheme are all determined by variables which are use for consistancy.
+
+I hope that you find my suggestions useful. I think that your website portfolio is really nice and will catch the eye of potential employers. 
+It has even inspired me to make my own professional portfolio. Thanks for sharing. It's lovely!
+
+-Sara KanReply
+
+
+
+
+
+
+
+
+
+
+
+
+
 1. I did notice that not all of your links have hover effects though, Your Learn More button on the home page has no hover effect and neither does the Back to Top link. When other things have hover effects, it's a bit weird.
 
 	Change: Added hover effect on all links.

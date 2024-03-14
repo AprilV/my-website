@@ -1,3 +1,4 @@
+/* This is the CSS code for April Sykes Website Portfolio*/
 /*----------- Main and Global Styles ----------*/
 
 :root {
@@ -14,7 +15,11 @@
     --background-color-light: rgba(0, 0, 0, 0.4);
     --text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
     --text-color: #cdcdcd;
+    --quote-color: #6a9fe8;
     --max-content-width: 800px;
+    --border-style: solid;
+    --border-width: 2px;
+    --border-radius: 10px;
 }
 
 body {
@@ -73,11 +78,13 @@ nav#nav_menu ul li a {
 }
 
 nav#nav_menu ul li a:hover {
+    color: #ffd700;
     background-color: var(--hover-background-color);
 }
 
 nav#nav_menu ul li a.active {
-    background-color: var(--active-background-color);
+    color: var(--active-background-color);
+    background-color: transparent;
 }
 
 /* -------------- Hero Section Styles -------------- */
@@ -90,8 +97,7 @@ nav#nav_menu ul li a.active {
 }
 
 .hero_content h1 {
-    color: var(--active-background-color);
-    /* Name Gold for prominence */
+    color: #ffd700;
     text-shadow: var(--text-shadow);
     font-family: var(--font-family-heading);
     font-size: 3em;
@@ -112,10 +118,14 @@ nav#nav_menu ul li a.active {
     margin-top: 20px;
     transition: background-color 0.3s ease;
     font-family: var(--font-family-default);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .learn_more:hover {
     background-color: var(--hover-background-color);
+    color: #ffd700;
+    text-decoration: underline;
+
 }
 
 .learn_more:active {
@@ -168,32 +178,24 @@ nav#nav_menu ul li a.active {
     font-family: var(--font-family-default);
 }
 
-.projects_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: auto;
-    margin: 0 auto;
-    font-family: var(--font-family-default);
-}
-
+/* Default state of project links */
 .project {
-    color: var(--text-color);
+    color: var(--hover-background-color);
     font-size: 1.2em;
     padding: 10px 20px;
-    border-radius: 5px;
-    --background-color-dark: var(--background-color-dark);
-    transition: background-color 0.3s ease;
     border-radius: 10px;
+    background-color: var(--background-color-dark);
+    transition: color 0.3s ease;
+    text-decoration: underline;
 }
 
+/* Hover state of project links */
 .project:hover {
-
-    color: #ffffff;
+    color: #ffd700;
+    text-decoration: underline;
 }
 
-.project:visited {
+.project.selected {
     color: var(--visited-link-color);
 }
 
@@ -245,10 +247,9 @@ body.about-me {
 #about_me {
     margin: 0 auto;
     text-align: left;
+    line-height: 140%;
     display: flex;
     flex-direction: column;
-
-
     align-items: flex-start;
     background: var(--background-color-dark);
     color: #E0E0E0;
@@ -261,6 +262,22 @@ body.about-me {
     font-family: var(--font-family-default);
 }
 
+.first_text {
+    border-top: var(--border-width) solid #ffd700;
+    background-color: var(--background-color-dark);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    color: #ffd700;
+    text-align: center;
+    font-family: var(--font-family-heading);
+    font-size: 2em;
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+    text-shadow: var(--text-shadow);
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
+
 /* -------------- Quote Styles --------------- */
 
 #quote {
@@ -270,8 +287,7 @@ body.about-me {
 
 #quote q {
     font-style: italic;
-    color: var(--active-background-color);
-    padding-top: 10px;
+    color: var(--quote-color);
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -328,6 +344,7 @@ body.about-me {
     align-items: start;
     padding: 20px;
     margin: 20px 0;
+    line-height: 140%;
 }
 
 .work_history_item {

@@ -13,7 +13,6 @@
     --background-color-dark: rgba(77, 84, 89, 0.7);
     --background-color-light: rgba(0, 0, 0, 0.4);
     --text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-    --background-color-light: #e0e0e0;
     --text-color: #cdcdcd;
     --max-content-width: 800px;
 }
@@ -39,9 +38,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    ontent vertically */
 }
-
 
 /* -------------- Navigation Menu Styles -------------- */
 
@@ -182,24 +179,30 @@ nav#nav_menu ul li a.active {
 }
 
 .project {
-    text-decoration: underline;
     color: var(--text-color);
+    /* Default text color */
     font-size: 1.2em;
     padding: 10px 20px;
-    border-radius: 5px;
-    --background-color-dark: var(--background-color-dark);
-    transition: background-color 0.3s ease;
     border-radius: 10px;
+    /* Unified border-radius value */
+    background-color: var(--background-color-dark);
+    /* Assuming this is defined elsewhere */
+    transition: color 0.3s ease;
+    text-decoration: none;
+    /* Removes underline */
 }
 
 .project:hover {
-    background-color: var(--hover-background-color);
     color: #ffffff;
+    /* White text on hover */
 }
 
-.project:visited {
-    color: var(--visited-link-color);
+/* Define the selected state */
+.project.selected {
+    color: #ffd700; /* Gold color for the selected project link */
+    /* You can add other styles as needed */
 }
+
 
 /* -------------- Profile Picture Styles -------------- */
 
@@ -468,132 +471,6 @@ main p {
     box-sizing: border-box;
     text-align: left;
 }
-
-
-/* Reset any specific styles for .contact to just be a wrapper without its own padding */
-.content {
-    width: 100%;
-    min-height: calc(100vh - 50px);
-    /* Assuming your navbar is 50px high */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* Centers content vertically in the viewport */
-    align-items: center;
-    background-color: transparent;
-    /* or the main background of your page */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    padding-top: 50px;
-    /* Adjust the padding to match your navbar height */
-}
-
-/* Contact container style */
-.contact {
-    width: 100%;
-    /* Full width */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* Center .contact-form vertically */
-    background-color: transparent;
-    /* No additional background */
-    margin: 0;
-    /* No vertical margin */
-}
-
-/* Contact form specific styles */
-.contact-form {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
-    /* Shadow for dimension */
-    padding: 40px;
-    border-radius: 10px;
-    background: linear-gradient(145deg, rgba(77, 84, 89, 0.8), rgba(77, 84, 89, 0.85));
-    /* Subtle gradient */
-    max-width: 500px;
-    /* Max width for the form */
-    width: 100%;
-    margin: auto;
-    /* Center the form within .contact */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth transitions */
-    transform: scale(1);
-    /* Default scale */
-}
-
-/* Style headings within .contact-form */
-.contact-form h2 {
-    color: #ffffff;
-    /* Light color for readability */
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-/* Style labels within .contact-form for readability */
-.contact-form label {
-    color: #ffffff;
-    /* Light color for labels */
-    margin-bottom: 10px;
-}
-
-/* Style input and textarea elements within .contact-form */
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    background-color: #f8f8f8;
-    /* Lighter gray for input fields */
-    border: 1px solid #ddd;
-    /* Light border for inputs */
-    color: #333;
-    /* Dark color for text */
-    padding: 15px;
-    margin-bottom: 25px;
-    border-radius: 5px;
-    width: 100%;
-    /* Full width of the form */
-    transition: border-color 0.3s ease;
-    /* Border color transition */
-}
-
-/* Input focus styles */
-.contact-form input[type="text"]:focus,
-.contact-form input[type="email"]:focus,
-.contact-form textarea:focus {
-    border-color: var(--active-background-color);
-    /* Highlight the border on focus */
-    outline: none;
-    /* Remove the default outline */
-}
-
-/* Style the submit button within .contact-form */
-.contact-form input[type="submit"] {
-    background-color: var(--active-background-color);
-    /* Button background */
-    color: white;
-    /* White text color for contrast */
-    padding: 15px 30px;
-    border-radius: 5px;
-    cursor: pointer;
-    /* Cursor indicates a clickable button */
-    margin-top: 25px;
-    /* Space above the button */
-    width: auto;
-    /* Allow the button to size to content */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    /* Transitions for hover effect */
-}
-
-/* Submit button hover styles */
-.contact-form input[type="submit"]:hover {
-    background-color: var(--hover-background-color);
-    /* Darker color on hover */
-    transform: translateY(-2px);
-    /* Slight upward movement on hover */
-}
-
-
-
-
 
 /* -------------- Back to Top Button Styles -------------- */
 
