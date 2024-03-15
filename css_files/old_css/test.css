@@ -39,15 +39,16 @@ body {
 }
 
 main {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 20px 0;
 }
 
 /* -------------- Navigation Menu Styles -------------- */
 
-nav#nav_menu {
+nav menu nav#nav_menu {
     text-align: center;
     font-family: var(--font-family-default);
 }
@@ -87,6 +88,49 @@ nav#nav_menu ul li a.active {
     background-color: transparent;
 }
 
+/* -------------- LinkedIn Styles -------------- */
+
+#linkedin-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#linkedin-link {
+    color: var(--hover-background-color);
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: transparent;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    cursor: pointer;
+}
+
+#linkedin-logo {
+    width: 32px;
+    height: auto;
+    margin-right: 0px;
+    vertical-align: middle;
+}
+
+#linkedin-link:hover,
+#linkedin-link:focus {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+#linkedin-link span {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+nav#nav_menu ul li a:hover,
+#linkedin-link:hover {
+    color: #ffd700;
+}
+
 /* -------------- Hero Section Styles -------------- */
 
 .hero {
@@ -124,30 +168,6 @@ nav#nav_menu ul li a.active {
     color: #FFFFE0;
     font-size: 1.2em;
     font-family: var(--font-family-default);
-}
-
-.learn_more {
-    display: inline-block;
-    background-color: var(--active-background-color);
-    color: var(--text-color);
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-    font-family: var(--font-family-default);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.learn_more:hover {
-    background-color: var(--hover-background-color);
-    color: #ffd700;
-    text-decoration: underline;
-
-}
-
-.learn_more:active {
-    background-color: #2f5cb3;
 }
 
 /* -------------- Featured Projects and Testimonials Styles -------------- */
@@ -275,7 +295,7 @@ body.about-me {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     max-width: 80%;
-    margin-top: 40px;
+    margin-top: 0px;
     margin-bottom: 40px;
     font-family: var(--font-family-default);
 }
@@ -284,56 +304,6 @@ body.about-me {
     width: 100%;
     max-width: 1024px;
     margin: auto;
-}
-
-/* -------------- Quote Styles --------------- */
-
-#quote {
-    text-align: center;
-    font-family: var(--font-family-default);
-}
-
-#quote q {
-    font-style: italic;
-    color: var(--quote-color);
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* -------------- LinkedIn Styles -------------- */
-
-#linkedin {
-    text-align: center;
-    font-family: var(--font-family-default);
-}
-
-#linkedin a:visited {
-    color: var(--visited-link-color);
-    text-decoration: none;
-    font-family: var(--font-family-default);
-}
-
-#linkedin a:hover {
-    font-size: 150%;
-    color: #add8e6;
-    text-decoration: none;
-    font-family: var(--font-family-default);
-}
-
-.linkedin-logo {
-    width: 50px;
-    height: auto;
-    vertical-align: middle;
-    text-decoration: none;
-    font-family: var(--font-family-default);
-}
-
-#linkedin a {
-    text-decoration: none;
-    color: #add8e6;
-    font-weight: bold;
-    font-family: var(--font-family-default);
 }
 
 /* -------------- Work History Section Styles -------------- */
