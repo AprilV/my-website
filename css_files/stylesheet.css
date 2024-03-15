@@ -96,7 +96,6 @@ nav#nav_menu ul li a.active {
     font-family: var(--font-family-default);
 }
 
-
 .hero_content h1 {
     position: relative;
     color: #ffd700;
@@ -121,13 +120,11 @@ nav#nav_menu ul li a.active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-
-
 .hero_content p {
+    color: #FFFFE0;
     font-size: 1.2em;
     font-family: var(--font-family-default);
 }
-
 .learn_more {
     display: inline-block;
     background-color: var(--active-background-color);
