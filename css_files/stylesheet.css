@@ -96,12 +96,32 @@ nav#nav_menu ul li a.active {
     font-family: var(--font-family-default);
 }
 
+
 .hero_content h1 {
+    position: relative;
     color: #ffd700;
-    text-shadow: var(--text-shadow);
+    text-align: center;
     font-family: var(--font-family-heading);
     font-size: 3em;
+    display: block;
+    margin: auto;
+    width: fit-content;
+    padding-bottom: 20px;
 }
+
+.hero_content h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #ffd700, #f0f, #0ff, #ffd700);
+    border-radius: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
 
 .hero_content p {
     font-size: 1.2em;
@@ -262,21 +282,6 @@ body.about-me {
     font-family: var(--font-family-default);
 }
 
-.first_text {
-    border-top: var(--border-width) solid #ffd700;
-    background-color: var(--background-color-dark);
-    padding: 20px;
-    border-radius: var(--border-radius);
-    color: #ffd700;
-    text-align: center;
-    font-family: var(--font-family-heading);
-    font-size: 2em;
-    box-shadow: 0 4px 8px var(--box-shadow-color);
-    text-shadow: var(--text-shadow);
-    display: block;
-    margin: auto;
-    width: fit-content;
-}
 
 /* -------------- Quote Styles --------------- */
 
@@ -329,13 +334,6 @@ body.about-me {
 }
 
 /* -------------- Work History Section Styles -------------- */
-
-#work_history_title {
-    text-align: center;
-    color: var(--text-color);
-    background-color: transparent;
-    font-family: var(--font-family-default);
-}
 
 #work_history {
     display: grid;
@@ -428,7 +426,6 @@ main p {
 }
 
 /* -------------- Screenshot Container Styles -------------- */
-
 .screenshot figcaption {
     margin-bottom: 10px;
 }
@@ -480,6 +477,24 @@ main p {
     width: 80%;
     box-sizing: border-box;
     text-align: left;
+}
+
+#work_history_title,
+#featured_projects_title,
+.first_text {
+    border-top: var(--border-width) solid #ffd700;
+    background: var(--background-color-dark);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    color: #ffd700;
+    text-align: center;
+    font-family: var(--font-family-heading);
+    font-size: 2em;
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+    text-shadow: var(--text-shadow);
+    display: block;
+    margin: auto;
+    width: fit-content;
 }
 
 /* -------------- Back to Top Button Styles -------------- */
