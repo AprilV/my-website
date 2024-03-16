@@ -216,7 +216,8 @@ nav#nav_menu ul li a:hover,
     font-family: var(--font-family-default);
 }
 
-/* Default state of project links */
+/*< ------------ Project Link Styles -------------- > */
+
 .project {
     color: var(--hover-background-color);
     font-size: 1.2em;
@@ -225,6 +226,12 @@ nav#nav_menu ul li a:hover,
     background-color: var(--background-color-dark);
     transition: color 0.3s ease;
     text-decoration: underline;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    margin: auto;
 }
 
 /* Hover state of project links */
@@ -270,16 +277,7 @@ body.about-me {
     align-items: center;
     justify-content: center;
     font-family: var(--font-family-default);
-}
-
-#about_me_title {
-    text-align: center;
-    font-size: x-large;
-    color: var(--text-color);
-    border-bottom: 2px solid var(--active-background-color);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-family: var(--font-family-default);
+    margin: 20px 0;
 }
 
 #about_me {
@@ -545,7 +543,3 @@ footer {
         font-size: 0.8em;
     }
 }
-
-
-
-  
